@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.3" type="template" client="site" method="upgrade">
+	<name>rheinsurfen</name>
+	<creationDate>2016-11-05</creationDate>
+	<author>Rheinsurfen</author>
+	<copyright>Copyright © Rheinsurfen rheinsurfen.de</copyright>
+	<authorEmail>info@rheinsurfen.de</authorEmail>
+	<authorUrl>http://www.rheinsurfen.de</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[ <p>Created by <a href="http://www.rheinsurfen.de" target="_blank">Rheinsurfen | info@rheinsurfen.de</a>.</p>]]></description>
+	<files>
+		<folder>css</folder>
+		<folder>maps</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>navbar</position>
+		<position>debug</position>
+	</positions>
+	<config></config>
+</extension>

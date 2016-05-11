@@ -1,0 +1,21 @@
+{
+  "name": "rheinsurfen",
+  "version": "1.0.0",
+  "authors": [
+    "Rheinsurfen <info@rheinsurfen.de>"
+  ],
+  "description": "joomla 3.x template for joomla.org",
+  "license": "MIT",
+  "homepage": "www.rheinsurfen.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.1"
+  }
+}
