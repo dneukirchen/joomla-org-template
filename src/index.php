@@ -6,12 +6,12 @@ $doc = JFactory::getDocument();
 $menu = $app->getMenu();
 $activeMenuItem = $menu->getActive();
 $params = $app->getParams();
-$pageclass = $params->get('pageclass_sfx');
+$pageClass = $params->get('pageclass_sfx');
 $templatePath = $this->baseurl . '/templates/' . $this->template;
 
 // Construct the body class
 $bodyClass = ($menu->getActive() == $menu->getDefault()) ? 'frontpage' : 'site';
-$bodyClass .= ' ' . trim($activeMenu->alias) . ' ' . trim($pageclass);
+$bodyClass .= ' ' . trim($activeMenu->alias) . ' ' . trim($pageClass);
 
 // Force latest IE & chrome frame
 $doc->setMetadata('x-ua-compatible', 'IE=edge,chrome=1');
@@ -28,7 +28,7 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 <head>
 	<jdoc:include type="head"/>
 </head>
-<body class="<?php echo $bodyClass; ?>" role="document">
+<body class="<?php echo trim($bodyClass); ?>" role="document">
 <jdoc:include type="modules" name="debug"/>
 <script src="<?php echo $templatePath; ?>/js/template.min.js"></script>
 </body>

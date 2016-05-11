@@ -21,8 +21,8 @@ var config = {
  * CSS (concat, compile, autoprefix, minify, sourcemaps)
  */
 gulp.task('css', function () {
-    // Scss config
-    var scssConfig = {
+    // Sass config
+    var sassConfig = {
         advanced: true,
         aggressiveMerging: true,
         mediaMerging: true,
@@ -32,9 +32,9 @@ gulp.task('css', function () {
         ]
     };
 
-    return gulp.src('./src/styles/template.scss')
+    return gulp.src('./src/scss/template.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass(scssConfig).on('error', sass.logError))
+        .pipe(sass(sassConfig).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(minifyCss())
         .pipe(concat('template.min.css'))
