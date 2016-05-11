@@ -10,6 +10,7 @@ var concat = require('gulp-concat');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
+// The basic configuration
 var config = {
     bowerDir: '.bower_components',
     bootstrapDir: './bower_components/bootstrap-sass',
@@ -17,7 +18,7 @@ var config = {
 };
 
 /**
- * CSS
+ * CSS (concat, compile, autoprefix, minify, sourcemaps)
  */
 gulp.task('css', function () {
     // Scss config
@@ -42,7 +43,7 @@ gulp.task('css', function () {
 });
 
 /**
- * JS
+ * JS (concat, minify, sourcemaps)
  */
 gulp.task('js', function () {
     return gulp.src([
@@ -59,7 +60,10 @@ gulp.task('js', function () {
         .pipe(gulp.dest('./src/js/'));
 });
 
-gulp.task('icons', function () {
+/**
+ * Fonts (copy the fonts to the public dir)
+ */
+gulp.task('fonts', function () {
     return gulp.src(config.fontAwesomeDir + '/fonts/**.*')
         .pipe(gulp.dest('./src/fonts'));
 });
