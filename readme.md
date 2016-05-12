@@ -3,3 +3,5 @@
 ## TODO
 * check if we need font awesome
 * check if we need the google tag manager
+
+## Module positions
