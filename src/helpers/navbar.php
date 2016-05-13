@@ -3,19 +3,23 @@
 /**
  * Class RelaunchHelper
  *
- * This helper is for all the ugly relaunch/static html stuff
+ * This helper is for all the ugly relaunch/static-html stuff
  */
-class RelaunchHelper
+class NavbarHelper
 {
+
+	protected $url = 'https://cdn.joomla.org/template/menu/v3_menu.php';
+
+	protected $content;
 
 	/**
 	 * Get the joomla main menu html from cdn
 	 *
 	 * @return string
 	 */
-	public static function mainMenu()
+	public function mainMenu()
 	{
-		$url  = 'https://cdn.joomla.org/template/menu/v3_menu.php';
+		$url  = ;
 		$html = file_get_contents($url);
 
 		// Extract the main menu (#nav-joomla)
@@ -111,5 +115,9 @@ class RelaunchHelper
 			</ul>
 		</li>
 	</ul>";
+	}
+
+	protected function get() {
+
 	}
 }

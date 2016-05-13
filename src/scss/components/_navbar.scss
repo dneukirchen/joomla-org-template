@@ -5,6 +5,7 @@
 .navbar-brand {
   height: auto;
   margin: 15px 0 0;
+  transition: all .2s ease;
   a {
     &:hover {
       text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 1px;
@@ -17,10 +18,14 @@
     color: #fff;
     vertical-align: middle;
     margin-left: 5px;
+    transition: opacity .6s ease;
     sup {
       font-size: 10px;
       top: -1.8em;
     }
+  }
+  img {
+    transition: all .5s ease;
   }
 }
 // b3 override
@@ -29,6 +34,24 @@
 }
 
 // Shrink effect
-nav.navbar.nav-shrinked {
-
+.nav-shrinked {
+  .navbar-header {
+    float: left;
+    .navbar-brand {
+      margin: 0 0 0 -15px;
+      padding: 7px;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      img {
+        width: 35px;
+        height: auto;
+      }
+      span {
+        color: $teritary-blue;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
 }

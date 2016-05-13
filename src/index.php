@@ -58,7 +58,9 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	</nav>
 	<?php if ($this->countModules('hero')) : ?>
 		<section id="hero">
-			<jdoc:include type="modules" name="hero" style=""/>
+			<div class="row">
+				<jdoc:include type="modules" name="hero" style=""/>
+			</div>
 		</section>
 	<?php endif; ?>
 </header>
@@ -66,7 +68,52 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	<jdoc:include type="component"/>
 </main>
 <footer>
-
+	Joomla! Download Page: Get Joomla.<br />
+	Joomla! Demo Site: Try Joomla.<br />
+	Joomla.com: Get a Joomla! hosted website for free<br />
+	Technical Requirements: Get ready to install.<br />
+	Joomla! Documentation: Learn how to use Joomla.<br />
+	Joomla! Site Showcase: See great Joomla! sites.<br />
+	Joomla! Extensions Directory: Find an extension.<br />
+	Joomla! Resources Directory: Find Joomla! Pros.<br />
+	Joomla! Core Features: Learn what Joomla! includes.<br />
+	Joomla! Forums: Get support.<br />
+	About The Joomla! Project: Learn who we are and how we're organized.<br />
+	Joomla! Download Page: Get Joomla.<br />
+	Joomla! Demo Site: Try Joomla.<br />
+	Joomla.com: Get a Joomla! hosted website for free<br />
+	Technical Requirements: Get ready to install.<br />
+	Joomla! Documentation: Learn how to use Joomla.<br />
+	Joomla! Site Showcase: See great Joomla! sites.<br />
+	Joomla! Extensions Directory: Find an extension.<br />
+	Joomla! Resources Directory: Find Joomla! Pros.<br />
+	Joomla! Core Features: Learn what Joomla! includes.<br />
+	Joomla! Forums: Get support.<br />
+	About The Joomla! Project: Learn who we are and how we're organized.<br />
+	Joomla! Download Page: Get Joomla.<br />
+	Joomla! Demo Site: Try Joomla.<br />
+	Joomla.com: Get a Joomla! hosted website for free<br />
+	Technical Requirements: Get ready to install.<br />
+	Joomla! Documentation: Learn how to use Joomla.<br />
+	Joomla! Site Showcase: See great Joomla! sites.<br />
+	Joomla! Extensions Directory: Find an extension.<br />
+	Joomla! Resources Directory: Find Joomla! Pros.<br />
+	Joomla! Core Features: Learn what Joomla! includes.<br />
+	Joomla! Forums: Get support.<br />
+	About The Joomla! Project: Learn who we are and how we're organized.<br />
+	Joomla! Forums: Get support.<br />
+	About The Joomla! Project: Learn who we are and how we're organized.<br />
+	Joomla! Download Page: Get Joomla.<br />
+	Joomla! Demo Site: Try Joomla.<br />
+	Joomla.com: Get a Joomla! hosted website for free<br />
+	Technical Requirements: Get ready to install.<br />
+	Joomla! Documentation: Learn how to use Joomla.<br />
+	Joomla! Site Showcase: See great Joomla! sites.<br />
+	Joomla! Extensions Directory: Find an extension.<br />
+	Joomla! Resources Directory: Find Joomla! Pros.<br />
+	Joomla! Core Features: Learn what Joomla! includes.<br />
+	Joomla! Forums: Get support.<br />
+	About The Joomla! Project: Learn who we are and how we're organized.<br />
 </footer>
 <jdoc:include type="modules" name="debug"/>
 <script src="<?php echo $templatePath; ?>/js/template.min.js"></script>

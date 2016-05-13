@@ -24,9 +24,8 @@
 		<filename>favicon.ico</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
-	
 	<positions>
-		<position>position-1</position>
+		<position>hero</position>
 		<position>debug</position>
 	</positions>
 	<config></config>
