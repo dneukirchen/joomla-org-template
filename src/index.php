@@ -43,16 +43,31 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="<?php echo $this->baseurl; ?>">
-					<div class="navbar-brand"></div>
-				</a>
+				<h1 class="navbar-brand">
+					<a href="<?php echo $this->baseurl; ?>" title="Joomla Frontpage">
+						<img id="joomla-logo" src="<?php echo $templatePath . '/img/joomla-logo.png'; ?>"
+						     alt="Joomla Logo"/>
+						<span>Joomla!<sup>&reg;</sup></span>
+					</a>
+				</h1>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo RelaunchHelper::mainMenu(); ?>
 			</div>
 		</div>
 	</nav>
+	<?php if ($this->countModules('hero')) : ?>
+		<section id="hero">
+			<jdoc:include type="modules" name="hero" style=""/>
+		</section>
+	<?php endif; ?>
 </header>
+<main>
+	<jdoc:include type="component"/>
+</main>
+<footer>
+
+</footer>
 <jdoc:include type="modules" name="debug"/>
 <script src="<?php echo $templatePath; ?>/js/template.min.js"></script>
 </body>

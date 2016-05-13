@@ -1,0 +1,25 @@
+.navbar-header {
+  float: none;
+}
+
+.navbar-brand {
+  height: auto;
+  margin: 15px 0 0;
+  margin-left: 15px; // B3 override
+  span {
+    font-family: Asenine Wide;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    sup {
+      font-size: 10px;
+      top: -1.8em;
+    }
+  }
+}
+
+// Shrink effect
+nav.navbar.nav-shrinked {
+
+}

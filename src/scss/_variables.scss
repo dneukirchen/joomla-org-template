@@ -1,0 +1,43 @@
+//== Custom Variables
+//
+//## Custom joomla.org template variables
+
+//== Colors
+//
+//## Gray and brand colors for use across the template.
+
+// Secondary colors
+
+// Additional secondary colors
+
+// Teritary colors
+$teritary-blue: #242f50;
+
+// Neutral colors
+
+
+
+
+//== Begin Bootstrap Configuration
+//
+//## Override bootstrap variables
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$brand-primary: #4d90cf;
+$brand-success: #78c339;
+$brand-info: #72bdeb;
+$brand-warning: #fba633;
+$brand-danger: #f7410c;
+
+//== Navbar
+//
+//##
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-bg: $teritary-blue;
+
+// Inverted navbar links
+$navbar-inverse-link-color: #fff;
