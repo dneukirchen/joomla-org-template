@@ -48,7 +48,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
     return gulp.src([
             // config.bootstrapDir + '/assets/javascripts/bootstrap/collapse.js',
-            // config.bootstrapDir + '/assets/javascripts/bootstrap/dropdown.js',
+            config.bootstrapDir + '/assets/javascripts/bootstrap/dropdown.js',
             // config.bootstrapDir + '/assets/javascripts/bootstrap/modal.js',
             config.bootstrapDir + '/assets/javascripts/bootstrap/transition.js',
             './src/js/template.js',
