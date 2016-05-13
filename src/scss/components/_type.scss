@@ -1,3 +1,13 @@
+html, body {
+  height: 100%;
+}
 body {
   padding-top: 80px;
+  display: table;
+}
+header, main, footer {
+  display: table-row;
+}
+main {
+  height: 100%;
 }

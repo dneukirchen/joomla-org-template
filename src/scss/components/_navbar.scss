@@ -5,18 +5,27 @@
 .navbar-brand {
   height: auto;
   margin: 15px 0 0;
-  margin-left: 15px; // B3 override
+  a {
+    &:hover {
+      text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 1px;
+      text-decoration: none;
+    }
+  }
   span {
     font-family: Asenine Wide;
     font-size: 40px;
     color: #fff;
-    text-decoration: none;
     vertical-align: middle;
+    margin-left: 5px;
     sup {
       font-size: 10px;
       top: -1.8em;
     }
   }
+}
+// b3 override
+.navbar>.container .navbar-brand {
+  margin-left: 0;
 }
 
 // Shrink effect
