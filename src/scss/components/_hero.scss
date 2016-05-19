@@ -1,5 +1,5 @@
 #hero {
-  background: url('../img/hero-bg-1.png') center no-repeat;
+  background: $teritary-blue-dark url('../img/hero-bg-1.png') center no-repeat;
   background-size: cover;
   .container {
     padding-top: 60px;
@@ -14,8 +14,8 @@
 
 // Hero gradient overlay
 .hero-gradient {
-  @include gradient-vertical(darken($teritary-blue-dark, 20%), #fff);
-
+  background-image: radial-gradient(at top, transparent 50%, darken($teritary-blue-dark, 20%) 90%);
+  background-repeat: no-repeat;
 }
 
 // Hero heading module
