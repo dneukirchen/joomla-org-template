@@ -2,7 +2,7 @@
 
 ## Basics
 * Install the new template
-* Assign the "Home" menu item to the template 
+* Assign the template to the "Home" menu item
 
 ## Hero
 * Create a new "custom html" module with the following settings:
