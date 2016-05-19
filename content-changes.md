@@ -9,7 +9,7 @@
 	* title: "Hero Heading" (optional)
 	* show_title: false
 	* content: ```<h2>The Free Software Powering Millions of Websites</h2>
-                  <p>Joomla! is an award-winning content management system (CMS), which enables you to build web sites and powerful online applications.</p>```
+                  <p>Joomla! is an award-winning content management system (CMS), which enables you to build web sites and powerful online applications.</p>```
     * position: "hero"
     * menu assignment: only frontpage
     * module class suffix: " hero-heading"
@@ -22,13 +22,13 @@
 	* Link A Text: "Download Joomla!"
 * Create a new article with the following settings
 	* title: "Use Joomla!"
-	* content ```<p>Quickly launch a basic version of Joomla! on joomla.com. Easily upgrade for additional features.</p>```
+	* content ```<p>Quickly launch a basic version of Joomla! on joomla.com. Easily upgrade for additional features.</p>```
 	* category: "Hero Articles"
 	* Link A: "https://www.joomla.com/"
 	* Link A Text: "Launch Joomla!"
 * Create a new article with the following settings
 	* title: "Try Joomla!"
-	* content ```<p>Experiment with a full 90 day demo version of Joomla. Great for testing an extension or template.</p>```
+	* content ```<p>Experiment with a full 90 day demo version of Joomla. Great for testing an extension or template.</p>```
 	* category: "Hero Articles"
 	* Link A: "https://demo.joomla.org/"
 	* Link A Text: "Start Joomla! Demo"
