@@ -47,6 +47,35 @@ class NavbarHelper
 	}
 
 	/**
+	 * Get the joomla main menu html from cdn
+	 *
+	 * @return string
+	 */
+	public function internationalMenu()
+	{
+		if ($this->getContent() !== false)
+		{
+			// Enable user error handling
+			libxml_use_internal_errors(true);
+
+			// Load the html
+			$doc = new DOMDocument();
+			if (!$doc->loadHTML($this->content))
+			{
+				JFactory::getApplication()->enqueueMessage(libxml_get_last_error(), 'error');
+				libxml_clear_errors();
+			}
+
+			// Get and modify the main menu
+			$internationalMenu = $doc->getElementById("nav-international");
+			$internationalMenu->setAttribute('class', 'nav navbar-nav navbar-right');
+			$internationalMenu->removeAttribute('id');
+
+			return $doc->saveHTML($internationalMenu);
+		}
+	}
+
+	/**
 	 * Get the contents
 	 *
 	 * @return string

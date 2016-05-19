@@ -57,10 +57,10 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo $navbarHelper->mainMenu(); ?>
-				<?php //echo $navbarHelper->mainMenu(); ?>
 				<?php if ($this->countModules('position-0')) : ?>
 					<jdoc:include type="modules" name="position-0"/>
 				<?php endif; ?>
+				<?php echo $navbarHelper->internationalMenu(); ?>
 			</div>
 		</div>
 	</nav>

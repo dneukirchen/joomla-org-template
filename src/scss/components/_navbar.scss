@@ -66,10 +66,18 @@
 //== Main nav
 //
 //##
+.nav-header {
+  @extend .dropdown-header;
+}
 
 //== Language nav
 //
 //##
+.icon-earth {
+  @extend .fa;
+  @extend .fa-globe;
+  @extend .fa-lg;
+}
 
 //== Navbar form (search)
 //
