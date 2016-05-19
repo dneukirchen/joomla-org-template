@@ -1,7 +1,7 @@
 <?php defined('_JEXEC') or die;
 
 // Load the template helpers
-require_once __DIR__ . '/helpers/relaunch.php';
+require_once __DIR__ . '/helpers/navbar.php';
 
 // Set some variables used by the template
 $app = JFactory::getApplication();
@@ -12,6 +12,9 @@ $params = $app->getParams();
 $pageClass = $params->get('pageclass_sfx');
 $templatePath = $this->baseurl . '/templates/' . $this->template;
 $isFrontpage = ($menu->getActive() == $menu->getDefault());
+
+// Helpers
+$navbarHelper = new NavbarHelper();
 
 // Construct the body class
 $bodyClass = ($isFrontpage) ? 'frontpage' : 'site';
@@ -27,7 +30,7 @@ JHtml::_('jquery.framework');
 
 // Add the template stylesheet
 $doc->addStyleSheet($templatePath . '/css/template.min.css');
-?><!doctype html>
+?><!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>">
 <head>
 	<jdoc:include type="head"/>
@@ -53,7 +56,11 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 				</h1>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-				<?php echo RelaunchHelper::mainMenu(); ?>
+				<?php echo $navbarHelper->mainMenu(); ?>
+				<?php //echo $navbarHelper->mainMenu(); ?>
+				<?php if ($this->countModules('position-0')) : ?>
+					<jdoc:include type="modules" name="position-0"/>
+				<?php endif; ?>
 			</div>
 		</div>
 	</nav>

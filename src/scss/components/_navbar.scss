@@ -1,3 +1,10 @@
+//== Navbar
+//
+//##
+
+//== Navbar header and brand
+//
+//##
 .navbar-header {
   float: none;
 }
@@ -48,10 +55,56 @@
         height: auto;
       }
       span {
-        color: $teritary-blue;
+        color: $teritary-blue-dark;
         opacity: 0;
         visibility: hidden;
       }
     }
+  }
+}
+
+//== Main nav
+//
+//##
+
+//== Language nav
+//
+//##
+
+//== Navbar form (search)
+//
+//##
+.navbar-form {
+  float: right;
+  .form-control {
+    color: lighten($teritary-blue-dark, 70%);
+    background: darken($teritary-blue-dark, 10%);
+    border-radius: 20px;
+    border-color: darken($teritary-blue-dark, 10%);
+    padding-left: 15px;
+    box-shadow: none;
+  }
+  .input-group-btn {
+    .btn {
+      background: darken($teritary-blue-dark, 10%);
+      color: #fff;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-color: darken($teritary-blue-dark, 10%);
+    }
+  }
+
+  // Placeholder
+  ::-webkit-input-placeholder {
+    color: lighten($teritary-blue-dark, 70%);
+  }
+  :-moz-placeholder {
+    color: lighten($teritary-blue-dark, 70%);
+  }
+  ::-moz-placeholder {
+    color: lighten($teritary-blue-dark, 70%);
+  }
+  :-ms-input-placeholder {
+    color: lighten($teritary-blue-dark, 70%);
   }
 }

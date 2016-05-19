@@ -9,12 +9,12 @@
 
 // Hero color overlay
 .hero-color {
-  background: transparentize($teritary-blue, .63);
+  background: transparentize($teritary-blue-dark, .63);
 }
 
 // Hero gradient overlay
 .hero-gradient {
-  @include gradient-vertical(darken($teritary-blue, 20%), #fff);
+  @include gradient-vertical(darken($teritary-blue-dark, 20%), #fff);
 
 }
 

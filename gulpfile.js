@@ -26,6 +26,7 @@ gulp.task('css', function () {
         advanced: true,
         aggressiveMerging: true,
         mediaMerging: true,
+        precision: 10,
         includePaths: [
             config.bootstrapDir + '/assets/stylesheets',
             config.fontAwesomeDir + '/scss'
