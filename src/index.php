@@ -11,9 +11,10 @@ $activeMenuItem = $menu->getActive();
 $params = $app->getParams();
 $pageClass = $params->get('pageclass_sfx');
 $templatePath = $this->baseurl . '/templates/' . $this->template;
+$isFrontpage = ($menu->getActive() == $menu->getDefault());
 
 // Construct the body class
-$bodyClass = ($menu->getActive() == $menu->getDefault()) ? 'frontpage' : 'site';
+$bodyClass = ($isFrontpage) ? 'frontpage' : 'site';
 $bodyClass .= ' ' . trim($activeMenuItem->alias) . ' ' . trim($pageClass);
 
 // Force latest IE & chrome frame
@@ -56,64 +57,72 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 			</div>
 		</div>
 	</nav>
+</header>
+<main>
 	<?php if ($this->countModules('hero')) : ?>
 		<section id="hero">
-			<div class="row">
-				<jdoc:include type="modules" name="hero" style=""/>
+			<div class="hero-color">
+				<div class="hero-gradient">
+					<div class="container">
+						<div class="row">
+							<jdoc:include type="modules" name="hero" style=""/>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	<?php endif; ?>
-</header>
-<main>
-	<jdoc:include type="component"/>
+	<?php if (!$isFrontpage) : ?>
+		<jdoc:include type="component"/>
+	<?php endif; ?>
 </main>
 <footer>
-	Joomla! Download Page: Get Joomla.<br />
-	Joomla! Demo Site: Try Joomla.<br />
-	Joomla.com: Get a Joomla! hosted website for free<br />
-	Technical Requirements: Get ready to install.<br />
-	Joomla! Documentation: Learn how to use Joomla.<br />
-	Joomla! Site Showcase: See great Joomla! sites.<br />
-	Joomla! Extensions Directory: Find an extension.<br />
-	Joomla! Resources Directory: Find Joomla! Pros.<br />
-	Joomla! Core Features: Learn what Joomla! includes.<br />
-	Joomla! Forums: Get support.<br />
-	About The Joomla! Project: Learn who we are and how we're organized.<br />
-	Joomla! Download Page: Get Joomla.<br />
-	Joomla! Demo Site: Try Joomla.<br />
-	Joomla.com: Get a Joomla! hosted website for free<br />
-	Technical Requirements: Get ready to install.<br />
-	Joomla! Documentation: Learn how to use Joomla.<br />
-	Joomla! Site Showcase: See great Joomla! sites.<br />
-	Joomla! Extensions Directory: Find an extension.<br />
-	Joomla! Resources Directory: Find Joomla! Pros.<br />
-	Joomla! Core Features: Learn what Joomla! includes.<br />
-	Joomla! Forums: Get support.<br />
-	About The Joomla! Project: Learn who we are and how we're organized.<br />
-	Joomla! Download Page: Get Joomla.<br />
-	Joomla! Demo Site: Try Joomla.<br />
-	Joomla.com: Get a Joomla! hosted website for free<br />
-	Technical Requirements: Get ready to install.<br />
-	Joomla! Documentation: Learn how to use Joomla.<br />
-	Joomla! Site Showcase: See great Joomla! sites.<br />
-	Joomla! Extensions Directory: Find an extension.<br />
-	Joomla! Resources Directory: Find Joomla! Pros.<br />
-	Joomla! Core Features: Learn what Joomla! includes.<br />
-	Joomla! Forums: Get support.<br />
-	About The Joomla! Project: Learn who we are and how we're organized.<br />
-	Joomla! Forums: Get support.<br />
-	About The Joomla! Project: Learn who we are and how we're organized.<br />
-	Joomla! Download Page: Get Joomla.<br />
-	Joomla! Demo Site: Try Joomla.<br />
-	Joomla.com: Get a Joomla! hosted website for free<br />
-	Technical Requirements: Get ready to install.<br />
-	Joomla! Documentation: Learn how to use Joomla.<br />
-	Joomla! Site Showcase: See great Joomla! sites.<br />
-	Joomla! Extensions Directory: Find an extension.<br />
-	Joomla! Resources Directory: Find Joomla! Pros.<br />
-	Joomla! Core Features: Learn what Joomla! includes.<br />
-	Joomla! Forums: Get support.<br />
-	About The Joomla! Project: Learn who we are and how we're organized.<br />
+	Joomla!Download Page: Get Joomla .<br/>
+	Joomla!Demo Site: Try Joomla .<br/>
+	Joomla . com: Get a Joomla!hosted website for free < br />
+	Technical Requirements: Get ready to install .<br/>
+	Joomla!Documentation: Learn how to use Joomla.<br/>
+	Joomla!Site Showcase: See great Joomla!sites .<br/>
+	Joomla!Extensions Directory: Find an extension .<br/>
+	Joomla!Resources Directory: Find Joomla!Pros .<br/>
+	Joomla!Core Features: Learn what Joomla!includes .<br/>
+	Joomla!Forums: Get support .<br/>
+	About The Joomla!Project: Learn who we are and how we're organized.<br/>
+	Joomla! Download Page: Get Joomla.<br/>
+	Joomla! Demo Site: Try Joomla.<br/>
+	Joomla.com: Get a Joomla! hosted website for free<br/>
+	Technical Requirements: Get ready to install.<br/>
+	Joomla! Documentation: Learn how to use Joomla.<br/>
+	Joomla! Site Showcase: See great Joomla! sites.<br/>
+	Joomla! Extensions Directory: Find an extension.<br/>
+	Joomla! Resources Directory: Find Joomla! Pros.<br/>
+	Joomla! Core Features: Learn what Joomla! includes.<br/>
+	Joomla! Forums: Get support.<br/>
+	About The Joomla! Project: Learn who we are and how we're organized .<br/>
+	Joomla!Download Page: Get Joomla .<br/>
+	Joomla!Demo Site: Try Joomla .<br/>
+	Joomla . com: Get a Joomla!hosted website for free < br />
+	Technical Requirements: Get ready to install .<br/>
+	Joomla!Documentation: Learn how to use Joomla.<br/>
+	Joomla!Site Showcase: See great Joomla!sites .<br/>
+	Joomla!Extensions Directory: Find an extension .<br/>
+	Joomla!Resources Directory: Find Joomla!Pros .<br/>
+	Joomla!Core Features: Learn what Joomla!includes .<br/>
+	Joomla!Forums: Get support .<br/>
+	About The Joomla!Project: Learn who we are and how we're organized.<br/>
+	Joomla! Forums: Get support.<br/>
+	About The Joomla! Project: Learn who we are and how we're organized .<br/>
+	Joomla!Download Page: Get Joomla .<br/>
+	Joomla!Demo Site: Try Joomla .<br/>
+	Joomla . com: Get a Joomla!hosted website for free < br />
+	Technical Requirements: Get ready to install .<br/>
+	Joomla!Documentation: Learn how to use Joomla.<br/>
+	Joomla!Site Showcase: See great Joomla!sites .<br/>
+	Joomla!Extensions Directory: Find an extension .<br/>
+	Joomla!Resources Directory: Find Joomla!Pros .<br/>
+	Joomla!Core Features: Learn what Joomla!includes .<br/>
+	Joomla!Forums: Get support .<br/>
+	About The Joomla!Project: Learn who we are and how we're organized.<br/>
 </footer>
 <jdoc:include type="modules" name="debug"/>
 <script src="<?php echo $templatePath; ?>/js/template.min.js"></script>

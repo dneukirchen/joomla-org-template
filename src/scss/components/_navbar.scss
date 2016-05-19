@@ -5,7 +5,7 @@
 .navbar-brand {
   height: auto;
   margin: 15px 0 0;
-  transition: all .2s ease;
+  transition: all .6s ease;
   a {
     &:hover {
       text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 1px;
@@ -18,14 +18,14 @@
     color: #fff;
     vertical-align: middle;
     margin-left: 5px;
-    transition: opacity .6s ease;
+    transition: opacity 1s ease;
     sup {
       font-size: 10px;
       top: -1.8em;
     }
   }
   img {
-    transition: all .5s ease;
+    transition: all .6s ease;
   }
 }
 // b3 override
