@@ -5,7 +5,7 @@
 // Including fallback code for the placeholder attribute in the search field.
 JHtml::_('script', 'system/html5fallback.js', false, true);
 ?>
-<form action="<?php echo JRoute::_('index.php'); ?>" method="post" class="navbar-form<?php echo $moduleclass_sfx; ?>"
+<form action="<?php echo JRoute::_('index.php'); ?>" method="post" class="navbar-form navbar-right<?php echo $moduleclass_sfx; ?>"
       role="search">
 	<label for="mod-search-searchword" class="sr-only"><?php echo $label; ?></label>
 	<div class="input-group">

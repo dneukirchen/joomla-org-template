@@ -83,7 +83,8 @@
 //
 //##
 .navbar-form {
-  float: right;
+  padding-right: 0; // TODO check collapsed viewports
+  padding-left: 0; // TODO check collapsed viewports
   .form-control {
     color: lighten($teritary-blue-dark, 70%);
     background: darken($teritary-blue-dark, 10%);

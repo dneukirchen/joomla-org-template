@@ -46,5 +46,5 @@
 	* show_title: false
 	* position: "hero"
 	* menu assignment: only frontpage
-	* module class suffix: " hero-teaser"
+	* layout: "hero-teaser"
 	
