@@ -87,7 +87,6 @@
   .form-control {
     color: lighten($teritary-blue-dark, 70%);
     background: darken($teritary-blue-dark, 10%);
-    border-radius: 20px;
     border-color: darken($teritary-blue-dark, 10%);
     padding-left: 15px;
     box-shadow: none;
@@ -96,8 +95,6 @@
     .btn {
       background: darken($teritary-blue-dark, 10%);
       color: #fff;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
       border-color: darken($teritary-blue-dark, 10%);
     }
   }

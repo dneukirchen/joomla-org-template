@@ -15,9 +15,6 @@ $teritary-blue-dark: #242f50;
 
 // Neutral colors
 
-
-
-
 //== Begin Bootstrap Configuration
 //
 //## Override bootstrap variables
@@ -30,6 +27,13 @@ $brand-success: #78c339;
 $brand-info: #72bdeb;
 $brand-warning: #fba633;
 $brand-danger: #f7410c;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+$border-radius-base: 20px;
+$border-radius-large: 25px;
+$border-radius-small: 15px;
 
 //== Navbar
 //
