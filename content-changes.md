@@ -8,7 +8,7 @@
 * Create a new "custom html" module with the following settings:
 	* title: "Hero Heading" (optional)
 	* show_title: false
-	* content: ```<h2>The Free Software Powering Millions of Websites</h2>
+	* content: ```<h2>The Free Software Powering Millions of Websites</h2>
                   <p>Joomla! is an award-winning content management system (CMS), which enables you to build web sites and powerful online applications.</p>```
     * position: "hero"
     * menu assignment: only frontpage
