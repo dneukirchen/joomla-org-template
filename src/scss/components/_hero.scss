@@ -21,7 +21,7 @@
 
 // Hero gradient overlay
 .hero-gradient {
-  background-image: radial-gradient(at top, transparent 50%, darken($teritary-blue-dark, 30%) 90%);
+  background-image: radial-gradient(circle at top, transparent 55%, #0d111c 85%);
   background-repeat: no-repeat;
 }
 
