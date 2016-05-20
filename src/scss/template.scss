@@ -1,8 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic);
+//===============
+// Main template sass file
+//===============
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+
+// Variables and customizations
 @import "variables";
 @import "custom-bootstrap";
-@import "font-awesome";
+@import "custom-font-awesome";
 
 // Custom components
 @import "components/fonts";

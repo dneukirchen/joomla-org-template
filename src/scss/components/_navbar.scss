@@ -1,6 +1,6 @@
-//== Navbar
-//
-//##
+//===============
+// Navbar
+//===============
 
 //== Navbar header and brand
 //
@@ -86,31 +86,31 @@
   padding-right: 0; // TODO check collapsed viewports
   padding-left: 0; // TODO check collapsed viewports
   .form-control {
-    color: lighten($teritary-blue-dark, 70%);
-    background: darken($teritary-blue-dark, 10%);
-    border-color: darken($teritary-blue-dark, 10%);
+    color: $teritary-blue-dark-white70;
+    background: $teritary-blue-dark-darker10;
+    border-color: $teritary-blue-dark-darker10;
     padding-left: 15px;
     box-shadow: none;
   }
   .input-group-btn {
     .btn {
-      background: darken($teritary-blue-dark, 10%);
+      background: $teritary-blue-dark-darker10;
       color: #fff;
-      border-color: darken($teritary-blue-dark, 10%);
+      border-color: $teritary-blue-dark-darker10;
     }
   }
 
   // Placeholder
   ::-webkit-input-placeholder {
-    color: lighten($teritary-blue-dark, 70%);
+    color: $teritary-blue-dark-white70;
   }
   :-moz-placeholder {
-    color: lighten($teritary-blue-dark, 70%);
+    color: $teritary-blue-dark-white70;
   }
   ::-moz-placeholder {
-    color: lighten($teritary-blue-dark, 70%);
+    color: $teritary-blue-dark-white70;
   }
   :-ms-input-placeholder {
-    color: lighten($teritary-blue-dark, 70%);
+    color: $teritary-blue-dark-white70;
   }
 }

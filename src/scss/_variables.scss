@@ -1,47 +1,88 @@
-//== Custom Variables
+//===============
+// Custom template variables
+//===============
+
+//== Colors
 //
-//## Custom joomla.org template variables
+//##
+$primary-blue: #5091cd;
+$primary-green: #7ac143;
+$primary-orange: #f9a541;
+$primary-red: #f44321;
+
+// Secondary colors
+$secondary-blue: #75bee9;
+$secondary-yellow: #fec34d;
+$secondary-orange: #f27042;
+$secondary-green: #89c764;
+
+// Additional secondary colors
+$additional-secondary-red: #e97575;
+$additional-secondary-purple: #8564c7;
+$additional-secondary-yellow: #f2df42;
+$additional-secondary-green: #50af8c;
+$additional-secondary-blue: #75bee9;
+$additional-secondary-orange-light: #fec34d;
+$additional-secondary-orange: #f27042;
+$additional-secondary-olive: #89c764;
+
+// Teritary colors
+$teritary-blue-dark: #242f50;
+$teritary-blue: #4076a2;
+$teritary-blue-light: #2383c6;
+$teritary-blue-lighter: #91c5ea;
+
+// Teritary color modifications
+$teritary-blue-dark-darker10: #192136; // darken($teritary-blue-dark, 10%)
+$teritary-blue-dark-white70: #bec1cb;
+$teritary-blue-dark-darker10-white10: #30384a;
+
+// Neutral colors
+$neutral-gray-dark: #433e42;
+$neutral-gray: #999;
+$neutral-gray-light: #c3c3c3;
+$neutral-gray-lighter: #ececec;
+
+//== Typography
+//
+//##
+$line-height-text: 1.5625; // 25/16
+
+//== Components
+//
+//##
 $rounded-border-radius-base: 20px;
 $rounded-border-radius-large: 25px;
 $rounded-border-radius-small: 15px;
 
-//== Colors
-//
-//## Gray and brand colors for use across the template.
-
-// Secondary colors
-
-// Additional secondary colors
-
-// Teritary colors
-$teritary-blue-dark: #242f50;
-
-// Neutral colors
-
-//== Begin Bootstrap Configuration
-//
-//## Override bootstrap variables
+//===============
+// Begin Bootstrap Configuration/Override
+//===============
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-$brand-primary: #4d90cf;
-$brand-success: #78c339;
-$brand-info: #72bdeb;
-$brand-warning: #fba633;
-$brand-danger: #f7410c;
+$brand-primary: $primary-blue;
+$brand-success: $primary-green;
+$brand-info: $secondary-blue;
+$brand-warning: $primary-orange;
+$brand-danger: $primary-red;
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $font-family-serif: 'Merriweather', serif;
-$font-family-base: $font-family-serif;
+$font-size-base: 16px;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429; // 20/14
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: $font-family-serif;
 
 //== Navbar
 //
 //##
-
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-bg: $teritary-blue-dark;

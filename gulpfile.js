@@ -12,9 +12,7 @@ var sass = require('gulp-sass');
 
 // The basic configuration
 var config = {
-    bowerDir: '.bower_components',
-    bootstrapDir: './bower_components/bootstrap-sass',
-    fontAwesomeDir: './bower_components/font-awesome'
+    bowerDir: './bower_components',
 };
 
 /**
@@ -27,10 +25,7 @@ gulp.task('css', function () {
         aggressiveMerging: true,
         mediaMerging: true,
         precision: 10,
-        includePaths: [
-            config.bootstrapDir + '/assets/stylesheets',
-            config.fontAwesomeDir + '/scss'
-        ]
+        includePaths: [config.bowerDir]
     };
 
     return gulp.src('./src/scss/template.scss')
