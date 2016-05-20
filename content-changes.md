@@ -18,18 +18,21 @@
 	* title: "Download Joomla!"
 	* content ```<p>Download and Install Joomla in your own server or development environment</p>```
 	* category: "Hero Articles"
+	* Intro Image alt text: "fa fa-download"
 	* Link A: "https://www.joomla.org/download.html"
 	* Link A Text: "Download Joomla!"
 * Create a new article with the following settings
 	* title: "Use Joomla!"
 	* content ```<p>Quickly launch a basic version of Joomla! on joomla.com. Easily upgrade for additional features.</p>```
 	* category: "Hero Articles"
+	* Intro Image alt text: "fa fa-rocket"
 	* Link A: "https://www.joomla.com/"
 	* Link A Text: "Launch Joomla!"
 * Create a new article with the following settings
 	* title: "Try Joomla!"
 	* content ```<p>Experiment with a full 90 day demo version of Joomla. Great for testing an extension or template.</p>```
 	* category: "Hero Articles"
+	* Intro Image alt text: "fa fa-desktop"
 	* Link A: "https://demo.joomla.org/"
 	* Link A Text: "Start Joomla! Demo"
 * Create a new module "Articles Newsflash" with the following settings:

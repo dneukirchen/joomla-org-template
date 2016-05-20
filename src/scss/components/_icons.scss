@@ -1,0 +1,13 @@
+$iconShadowColor: transparentize($neutral-gray-lighter, .5);
+.icon-shadowed {
+  text-shadow: $iconShadowColor 1px 1px,
+  $iconShadowColor 2px 2px,
+  $iconShadowColor 3px 3px,
+  $iconShadowColor 4px 4px,
+  $iconShadowColor 5px 5px,
+  $iconShadowColor 6px 6px,
+  $iconShadowColor 7px 7px,
+  $iconShadowColor 8px 8px,
+  $iconShadowColor 9px 9px,
+  $iconShadowColor 10px 10px
+}

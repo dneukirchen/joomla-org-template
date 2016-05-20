@@ -2,15 +2,17 @@
 // Hero section
 //===============
 
-//== Hero
+$gradient-overlay-color: #0d111c;
+
+  //== Hero
 //
 //##
 #hero {
   background: $teritary-blue-dark url('../img/hero-bg-1.png') center no-repeat;
   background-size: cover;
   .container {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 60px;
   }
 }
 
@@ -21,7 +23,7 @@
 
 // Hero gradient overlay
 .hero-gradient {
-  background-image: radial-gradient(circle at top, transparent 55%, #0d111c 85%);
+  background-image: radial-gradient(circle at top, transparent 55%, $gradient-overlay-color 85%);
   background-repeat: no-repeat;
 }
 
@@ -31,7 +33,7 @@
 .hero-heading {
   text-align: center;
   color: #fff;
-  margin: 0 auto 120px;
+  margin: 0 auto 170px;
   width: 720px;
   font-size: 26px;
   line-height: 34px;
@@ -51,11 +53,59 @@
   article {
     background: #fff;
     text-align: center;
-    padding: $grid-gutter-width;
-    padding-bottom: 0;
+    padding-top: $grid-gutter-width;
     border-radius: 1px;
+    transition: all .2s ease-in;
   }
+
   header {
     display: block;
+    padding: 0 $grid-gutter-width;
+  }
+
+  .hero-teaser-body {
+    display: block;
+    padding: 0 $grid-gutter-width $grid-gutter-width;
+  }
+
+  footer {
+    display: block;
+    a {
+      display: block;
+      background: $primary-blue;
+      color: #fff;
+      padding: ($grid-gutter-width / 2) $grid-gutter-width;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  // Hover effect
+  > div {
+    position: relative;
+    transition: all .2s ease-in;
+    transform: scale(1);
+    z-index: 1;
+    &:hover {
+      z-index: 2;
+      transform: scale(1.05);
+      article {
+        box-shadow: 0 0 $grid-gutter-width $gradient-overlay-color;
+      }
+    }
+  }
+
+  // First teaser
+  > div:first-child {
+    footer a {
+      background: $additional-secondary-olive;
+    }
+  }
+
+  // Last Teaser
+  > div:last-child {
+    footer a {
+      background: $secondary-orange;
+    }
   }
 }
