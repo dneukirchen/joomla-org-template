@@ -70,6 +70,10 @@ $gradient-overlay-color: #0d111c;
     padding: 0 $grid-gutter-width;
   }
 
+  .icon-circled {
+    @extend .icon-circled-primary;
+  }
+
   .hero-teaser-title {
     font-size: $font-size-xl;
   }
@@ -113,6 +117,9 @@ $gradient-overlay-color: #0d111c;
 
   // First teaser
   > div:first-child {
+    .icon-circled {
+      @extend .icon-circled-additional-secondary-olive;
+    }
     footer a {
       background: $additional-secondary-olive;
     }
@@ -120,6 +127,9 @@ $gradient-overlay-color: #0d111c;
 
   // Last Teaser
   > div:last-child {
+    .icon-circled {
+      @extend .icon-circled-secondary-orange;
+    }
     footer a {
       background: $secondary-orange;
     }

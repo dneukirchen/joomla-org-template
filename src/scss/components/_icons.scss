@@ -1,13 +1,174 @@
-$iconShadowColor: transparentize($neutral-gray-lighter, .5);
-.icon-shadowed {
-  text-shadow: $iconShadowColor 1px 1px,
-  $iconShadowColor 2px 2px,
-  $iconShadowColor 3px 3px,
-  $iconShadowColor 4px 4px,
-  $iconShadowColor 5px 5px,
-  $iconShadowColor 6px 6px,
-  $iconShadowColor 7px 7px,
-  $iconShadowColor 8px 8px,
-  $iconShadowColor 9px 9px,
-  $iconShadowColor 10px 10px
+//===============
+// Module styles
+//===============
+
+//== Variables
+//
+//##
+$shadow-color-darken-percent: 6%;
+
+//== Mixins
+//
+//##
+
+// Shadow effect
+@mixin icon-shadowed($color) {
+  text-shadow: $color 1px 1px,
+  $color 2px 2px,
+  $color 3px 3px,
+  $color 4px 4px,
+  $color 5px 5px,
+  $color 6px 6px,
+  $color 7px 7px,
+  $color 8px 8px,
+  $color 9px 9px,
+  $color 10px 10px,
+  $color 11px 11px,
+  $color 12px 12px,
+  $color 13px 13px,
+  $color 14px 14px,
+  $color 15px 15px,
+  $color 16px 16px,
+  $color 17px 17px,
+  $color 18px 18px,
+  $color 19px 19px,
+  $color 20px 20px,
+  $color 21px 21px,
+  $color 22px 22px,
+  $color 23px 23px,
+  $color 24px 24px,
+  $color 25px 25px,
+  $color 26px 26px,
+  $color 27px 27px,
+  $color 28px 28px,
+  $color 29px 29px,
+  $color 30px 30px,
+  $color 31px 31px,
+  $color 32px 32px,
+  $color 33px 33px,
+  $color 34px 34px,
+  $color 35px 35px,
+  $color 36px 36px,
+  $color 37px 37px,
+  $color 38px 38px,
+  $color 39px 39px,
+  $color 40px 40px,
+  $color 41px 41px,
+  $color 42px 42px,
+  $color 43px 43px,
+  $color 44px 44px,
+  $color 45px 45px,
+  $color 46px 46px,
+  $color 47px 47px,
+  $color 48px 48px,
+  $color 49px 49px,
+  $color 50px 50px,
+  $color 51px 51px,
+  $color 52px 52px,
+  $color 53px 53px,
+  $color 54px 54px,
+  $color 55px 55px,
+  $color 56px 56px,
+  $color 57px 57px,
+  $color 58px 58px,
+  $color 59px 59px,
+  $color 60px 60px,
+  $color 61px 61px,
+  $color 62px 62px,
+  $color 63px 63px,
+  $color 64px 64px,
+  $color 65px 65px,
+  $color 66px 66px,
+  $color 67px 67px,
+  $color 68px 68px,
+  $color 69px 69px,
+  $color 70px 70px,
+  $color 71px 71px,
+  $color 72px 72px,
+  $color 73px 73px,
+  $color 74px 74px,
+  $color 75px 75px,
+  $color 76px 76px,
+  $color 77px 77px,
+  $color 78px 78px,
+  $color 79px 79px,
+  $color 80px 80px,
+  $color 81px 81px,
+  $color 82px 82px,
+  $color 83px 83px,
+  $color 84px 84px,
+  $color 85px 85px,
+  $color 86px 86px,
+  $color 87px 87px,
+  $color 88px 88px,
+  $color 89px 89px,
+  $color 90px 90px,
+  $color 91px 91px,
+  $color 92px 92px,
+  $color 93px 93px,
+  $color 94px 94px,
+  $color 95px 95px,
+  $color 96px 96px,
+  $color 97px 97px,
+  $color 98px 98px,
+  $color 99px 99px,
+  $color 100px 100px;
+}
+
+// Circle size
+@mixin icon-circled-size($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  font-size: ceil(($size / 2));
+}
+
+// Circle variant
+@mixin icon-circled-variant($background, $color) {
+  background: $background;
+  color: $color;
+  &.icon-shadowed {
+    @include icon-shadowed(darken($background, $shadow-color-darken-percent));
+  }
+}
+
+//== Icon circled
+//
+//##
+.icon-circled {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  @include icon-circled-size(75px);
+  @include icon-circled-variant($neutral-gray-light, $neutral-gray-dark);
+}
+
+//== Icon circled sizes
+//
+//##
+.icon-circled-sm {
+  @include icon-circled-size(45px);
+}
+
+.icon-circled-lg {
+  @include icon-circled-size(100px);
+}
+
+//== Icon circled variants
+//
+//##
+// Primary colors
+.icon-circled-primary {
+  @include icon-circled-variant($brand-primary, #fff);
+}
+
+// Secondary colors
+.icon-circled-secondary-orange {
+  @include icon-circled-variant($secondary-orange, #fff);
+}
+
+// Additional seconday colors
+.icon-circled-additional-secondary-olive {
+  @include icon-circled-variant($additional-secondary-olive, #fff);
 }

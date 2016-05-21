@@ -11,7 +11,7 @@ $showReadmore = (isset($item->link) && $item->readmore != 0 && $params->get('rea
 			<img src="<?php echo $images->image_intro; ?>" alt="<?php echo $images->image_intro_alt; ?>"
 			     class="hero-teaser-image"/>
 		<?php elseif (!empty($images->image_intro_alt)) : ?>
-			<span class="icon-rounded icon-rounded-sm icon-shadowed">
+			<span class="icon-circled icon-circled-sm icon-shadowed">
 					<span class="<?php echo $images->image_intro_alt; ?>"></span>
 				</span>
 		<?php endif; ?>
