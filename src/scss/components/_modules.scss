@@ -24,6 +24,7 @@
 //##
 .finder {
   background: #fff url('../img/finder-bg.jpg') center bottom no-repeat;
+  margin-bottom: 1px;
   .pretty-select {
     width: 270px;
     margin-right: 10px;
@@ -34,5 +35,42 @@
   button[type="submit"] {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+//== Numbers
+//
+//##
+.numbers {
+  .numbers-box {
+    height: 265px;
+    position: relative;
+    color: #fff;
+    background: $primary-blue;
+  }
+  .numbers-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+  }
+  // Color variations
+  .installations {
+    background: $secondary-orange;
+  }
+  .extensions {
+    background: $primary-blue;
+  }
+  .support {
+    background: $additional-secondary-green;
+  }
+  .volunteers {
+    background: $additional-secondary-olive;
+  }
+  .development {
+    background: $additional-secondary-purple
+  }
+  .languages {
+    background: $additional-secondary-red;
   }
 }
