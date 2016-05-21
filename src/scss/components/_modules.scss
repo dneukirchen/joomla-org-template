@@ -1,3 +1,20 @@
 //===============
 // Module styles
 //===============
+
+//== Features and benefits
+//
+//##
+.features {
+  text-align: center;
+  h2 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  .feature {
+    padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
+    .icon-circled {
+      margin-bottom: 20px;
+    }
+  }
+}

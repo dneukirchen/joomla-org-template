@@ -25,17 +25,18 @@ $additional-secondary-blue: #75bee9;
 $additional-secondary-orange-light: #fec34d;
 $additional-secondary-orange: #f27042;
 $additional-secondary-olive: #89c764;
+$additional-secondary-scarlet: #ee5256;
 
-// Teritary colors
-$teritary-blue-dark: #242f50;
-$teritary-blue: #4076a2;
-$teritary-blue-light: #2383c6;
-$teritary-blue-lighter: #91c5ea;
+// tertiary colors
+$tertiary-blue-dark: #25304f;
+$tertiary-blue: #4076a2;
+$tertiary-blue-light: #2383c6;
+$tertiary-blue-lighter: #91c5ea;
 
-// Teritary color modifications
-$teritary-blue-dark-darker10: #192136; // darken($teritary-blue-dark, 10%)
-$teritary-blue-dark-white70: #bec1cb;
-$teritary-blue-dark-darker10-white10: #30384a;
+// tertiary color modifications
+$tertiary-blue-dark-darker10: #192136; // darken($tertiary-blue-dark, 10%)
+$tertiary-blue-dark-white70: #bec1cb;
+$tertiary-blue-dark-darker10-white10: #30384a;
 
 // Neutral colors
 $neutral-gray-dark: #433e42;
@@ -122,7 +123,7 @@ $headings-font-weight: $font-family-serif;
 //##
 //=== Inverted navbar
 // Reset inverted navbar basics
-$navbar-inverse-bg: $teritary-blue-dark;
+$navbar-inverse-bg: $tertiary-blue-dark;
 
 // Inverted navbar links
 $navbar-inverse-link-color: #fff;

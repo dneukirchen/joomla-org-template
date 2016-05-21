@@ -5,7 +5,7 @@
 //== Variables
 //
 //##
-$shadow-color-darken-percent: 6%;
+$shadow-color-darken-percent: 16%;
 
 //== Mixins
 //
@@ -62,57 +62,7 @@ $shadow-color-darken-percent: 6%;
   $color 47px 47px,
   $color 48px 48px,
   $color 49px 49px,
-  $color 50px 50px,
-  $color 51px 51px,
-  $color 52px 52px,
-  $color 53px 53px,
-  $color 54px 54px,
-  $color 55px 55px,
-  $color 56px 56px,
-  $color 57px 57px,
-  $color 58px 58px,
-  $color 59px 59px,
-  $color 60px 60px,
-  $color 61px 61px,
-  $color 62px 62px,
-  $color 63px 63px,
-  $color 64px 64px,
-  $color 65px 65px,
-  $color 66px 66px,
-  $color 67px 67px,
-  $color 68px 68px,
-  $color 69px 69px,
-  $color 70px 70px,
-  $color 71px 71px,
-  $color 72px 72px,
-  $color 73px 73px,
-  $color 74px 74px,
-  $color 75px 75px,
-  $color 76px 76px,
-  $color 77px 77px,
-  $color 78px 78px,
-  $color 79px 79px,
-  $color 80px 80px,
-  $color 81px 81px,
-  $color 82px 82px,
-  $color 83px 83px,
-  $color 84px 84px,
-  $color 85px 85px,
-  $color 86px 86px,
-  $color 87px 87px,
-  $color 88px 88px,
-  $color 89px 89px,
-  $color 90px 90px,
-  $color 91px 91px,
-  $color 92px 92px,
-  $color 93px 93px,
-  $color 94px 94px,
-  $color 95px 95px,
-  $color 96px 96px,
-  $color 97px 97px,
-  $color 98px 98px,
-  $color 99px 99px,
-  $color 100px 100px;
+  $color 50px 50px;
 }
 
 // Circle size
@@ -127,9 +77,6 @@ $shadow-color-darken-percent: 6%;
 @mixin icon-circled-variant($background, $color) {
   background: $background;
   color: $color;
-  &.icon-shadowed {
-    @include icon-shadowed(darken($background, $shadow-color-darken-percent));
-  }
 }
 
 //== Icon circled
@@ -161,14 +108,72 @@ $shadow-color-darken-percent: 6%;
 // Primary colors
 .icon-circled-primary {
   @include icon-circled-variant($brand-primary, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#4882b8);
+  }
 }
 
 // Secondary colors
+.icon-circled-secondary-blue {
+  @include icon-circled-variant($secondary-blue, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#69abd1);
+  }
+}
+
+.icon-circled-secondary-yellow {
+  @include icon-circled-variant($secondary-yellow, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#e4af45);
+  }
+}
+
 .icon-circled-secondary-orange {
   @include icon-circled-variant($secondary-orange, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#d9653b);
+  }
 }
 
 // Additional seconday colors
+.icon-circled-additional-secondary-green {
+  @include icon-circled-variant($additional-secondary-green, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#408c70);
+  }
+}
+
 .icon-circled-additional-secondary-olive {
   @include icon-circled-variant($additional-secondary-olive, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#7bb35a);
+  }
+}
+
+.icon-circled-additional-secondary-purple {
+  @include icon-circled-variant($additional-secondary-purple, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#6a509f);
+  }
+}
+
+.icon-circled-additional-secondary-red {
+  @include icon-circled-variant($additional-secondary-red, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#ba5e5e);
+  }
+}
+
+.icon-circled-additional-secondary-scarlet {
+  @include icon-circled-variant($additional-secondary-scarlet, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#c73f43);
+  }
+}
+
+.icon-circled-additional-secondary-orange {
+  @include icon-circled-variant($additional-secondary-orange, #fff);
+  &.icon-shadowed {
+    @include icon-shadowed(#c25a35);
+  }
 }

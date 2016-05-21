@@ -80,6 +80,91 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	<?php if (!$isFrontpage) : ?>
 		<jdoc:include type="component"/>
 	<?php endif; ?>
+	<section class="section-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="text-default">Why Joomla?</h2>
+					<p>Hundreds of developers have been improving Joomla since the first version was released in 2005. This immense effort has made Joomla very popular, easy to use, stable and secure.</p>
+					<p>Joomla has thousands of free extensions and templates allowing you to customize your site to fit your specific needs.</p>
+					<p>
+						<a href="#" class="btn btn-danger">Read more about Joomla!</a>
+					</p>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.youtube.com/embed/HMRM7CTnFAA?rel=0&controls=1&theme=light&showinfo=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-2 features">
+		<div class="container">
+			<h2 class="section-title">Features & Benefits</h2>
+			<div class="row">
+				<ul class="list-features list-unstyled">
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-olive">
+								<span class="fa fa-cog"></span>
+							</span>
+							<p>Search Engine</p>
+						</div>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-secondary-yellow">
+								<span class="fa fa-tablet"></span>
+							</span>
+							<p>Mobile Friendly</p>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-green">
+								<span class="fa fa-paint-brush"></span>
+							</span>
+							<p>Unlimited Design</p>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-scarlet">
+								<span class="fa fa-globe"></span>
+							</span>
+							<p>Multilingual</p>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-secondary-blue">
+								<span class="fa fa-tachometer"></span>
+							</span>
+							<p>Lightweight & Fast</p>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-red">
+								<span class="fa fa-users"></span>
+							</span>
+							<p>Multi-UserPermission Levels</p>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-purple">
+								<span class="fa fa-universal-access"></span>
+							</span>
+							<p>Established Open Source Software (10 Years)</p>
+						</div>
+					</li>
+					<li class="col-sm-3">
+						<div class="feature">
+							<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-orange">
+								<span class="fa fa-plug"></span>
+							</span>
+							<p>Flexible & Fully Extensible</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section id="typo">
 		<div class="container">
 			<div class="row">

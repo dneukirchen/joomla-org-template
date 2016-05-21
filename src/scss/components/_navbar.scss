@@ -58,7 +58,7 @@
         height: auto;
       }
       span {
-        color: $teritary-blue-dark;
+        color: $tertiary-blue-dark;
         opacity: 0;
         visibility: hidden;
       }
@@ -94,7 +94,7 @@
   @extend .fa;
   @extend .fa-globe;
   @extend .fa-lg;
-  color: $teritary-blue-dark-white70;
+  color: $tertiary-blue-dark-white70;
 }
 
 //== Navbar form (search)
@@ -104,36 +104,36 @@
   padding-right: 0; // TODO check collapsed viewports
   padding-left: 0; // TODO check collapsed viewports
   .form-control {
-    color: $teritary-blue-dark-white70;
-    background: $teritary-blue-dark-darker10;
-    border-color: $teritary-blue-dark-darker10;
+    color: $tertiary-blue-dark-white70;
+    background: $tertiary-blue-dark-darker10;
+    border-color: $tertiary-blue-dark-darker10;
     padding-left: 15px;
     box-shadow: none;
     font-weight: $font-weight-light;
   }
   .input-group-btn {
     .btn {
-      background: $teritary-blue-dark-darker10;
-      color: $teritary-blue-dark-white70;
-      border-color: $teritary-blue-dark-darker10;
+      background: $tertiary-blue-dark-darker10;
+      color: $tertiary-blue-dark-white70;
+      border-color: $tertiary-blue-dark-darker10;
     }
   }
 
   // Placeholder
   ::-webkit-input-placeholder {
     font-weight: $font-weight-light;
-    color: $teritary-blue-dark-white70;
+    color: $tertiary-blue-dark-white70;
   }
   :-moz-placeholder {
     font-weight: $font-weight-light;
-    color: $teritary-blue-dark-white70;
+    color: $tertiary-blue-dark-white70;
   }
   ::-moz-placeholder {
     font-weight: $font-weight-light;
-    color: $teritary-blue-dark-white70;
+    color: $tertiary-blue-dark-white70;
   }
   :-ms-input-placeholder {
     font-weight: $font-weight-light;
-    color: $teritary-blue-dark-white70;
+    color: $tertiary-blue-dark-white70;
   }
 }
