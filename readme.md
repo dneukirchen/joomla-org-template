@@ -10,3 +10,5 @@
 * Shrinked transition
 * scroll transitions
 * compare with the features from the old template
+* create the find graphic (magnifying glass) with css
+* finder functionality

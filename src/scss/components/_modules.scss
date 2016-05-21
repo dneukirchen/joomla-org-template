@@ -18,3 +18,21 @@
     }
   }
 }
+
+//== Finder
+//
+//##
+.finder {
+  background: #fff url('../img/finder-bg.jpg') center bottom no-repeat;
+  .pretty-select {
+    width: 270px;
+    margin-right: 10px;
+    select {
+      width: 100%;
+    }
+  }
+  button[type="submit"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

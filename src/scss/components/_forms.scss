@@ -1,0 +1,37 @@
+//===============
+// Forms
+//===============
+
+//== Pretty select boxes (css only)
+//
+//##
+.pretty-select {
+  background-color: $neutral-gray-lighter;
+  border-radius: $rounded-border-radius-base;
+  position: relative;
+  select, select:focus, select.form-control {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 20px;
+    padding-right: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+  }
+  &:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    right: 16px;
+    top: 6px;
+    color: $brand-danger;
+    z-index: 2;
+    pointer-events: none;
+    font-size: 16px;
+  }
+}

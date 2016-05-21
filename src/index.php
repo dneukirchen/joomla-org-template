@@ -111,9 +111,7 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	</section>
 	<section id="typo">
 		<div class="container">
-			<div class="row">
-				<div class="row"><?php include __DIR__ . '/demo/typography.php'; ?></div>
-			</div>
+			<div class="row"><?php include __DIR__ . '/demo/typography.php'; ?></div>
 		</div>
 	</section>
 </main>
