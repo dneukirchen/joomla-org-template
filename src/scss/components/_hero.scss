@@ -11,19 +11,15 @@ $gradient-overlay-color: #0d111c;
   background: $teritary-blue-dark url('../img/hero-bg-1.png') center no-repeat;
   background-size: cover;
   .container {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 60px;
   }
 }
 
-// Hero color overlay
-.hero-color {
-  background: transparentize($teritary-blue-dark, .45);
-}
-
-// Hero gradient overlay
-.hero-gradient {
-  background-image: radial-gradient(circle at top, transparent 55%, $gradient-overlay-color 85%);
+// Hero gradient and color overlay
+.hero-overlay {
+  background-color: transparentize($teritary-blue-dark, .45);
+  background-image: linear-gradient(to top,$gradient-overlay-color 28%,transparent 42%),radial-gradient(circle at top,transparent 68%,$gradient-overlay-color 83%);
   background-repeat: no-repeat;
 }
 
@@ -40,7 +36,7 @@ $gradient-overlay-color: #0d111c;
   h2 {
     @extend .hero-title;
     text-shadow: 1px 1px 1px $teritary-blue-dark-darker10;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: #fff;
   }
 }

@@ -12,6 +12,8 @@
 .navbar-brand {
   height: auto;
   margin: 15px 0 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
   transition: all .6s ease;
   a {
     &:hover {
@@ -46,7 +48,7 @@
   .navbar-header {
     float: left;
     .navbar-brand {
-      margin: 0 0 0 -15px;
+      margin: 0 0 0 -7px;
       padding: 7px;
       width: 50px;
       height: 50px;
@@ -63,6 +65,20 @@
     }
   }
 }
+//== Common navbar styles
+//
+//##
+#navbar {
+  > ul {
+    > li {
+      > a {
+        font-weight: $font-weight-light;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 
 //== Main nav
 //
@@ -78,6 +94,7 @@
   @extend .fa;
   @extend .fa-globe;
   @extend .fa-lg;
+  color: $teritary-blue-dark-white70;
 }
 
 //== Navbar form (search)
@@ -92,26 +109,31 @@
     border-color: $teritary-blue-dark-darker10;
     padding-left: 15px;
     box-shadow: none;
+    font-weight: $font-weight-light;
   }
   .input-group-btn {
     .btn {
       background: $teritary-blue-dark-darker10;
-      color: #fff;
+      color: $teritary-blue-dark-white70;
       border-color: $teritary-blue-dark-darker10;
     }
   }
 
   // Placeholder
   ::-webkit-input-placeholder {
+    font-weight: $font-weight-light;
     color: $teritary-blue-dark-white70;
   }
   :-moz-placeholder {
+    font-weight: $font-weight-light;
     color: $teritary-blue-dark-white70;
   }
   ::-moz-placeholder {
+    font-weight: $font-weight-light;
     color: $teritary-blue-dark-white70;
   }
   :-ms-input-placeholder {
+    font-weight: $font-weight-light;
     color: $teritary-blue-dark-white70;
   }
 }
