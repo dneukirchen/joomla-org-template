@@ -1,6 +1,10 @@
 //===============
 // Type
 //===============
+
+//== Scaffolding & sticky footer
+//
+//##
 html, body {
   height: 100%;
   width: 100%;
@@ -16,4 +20,62 @@ header, main, footer {
 }
 main {
   height: 100%;
+}
+
+//== Headings
+//
+//##
+h1 {
+  font-weight: $font-weight-light;
+  line-height: 1.2380952381; // 52px
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-weight: $font-weight-normal;
+  line-height: 1.3125; // 42px
+  margin-top: 28px;
+  margin-bottom: floor(($line-height-computed / 1.5));
+  color: $primary-red;
+}
+
+h3 {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: 1.25; // 30px
+  margin-top: 28px;
+  margin-bottom: floor(($line-height-computed / 2.5));
+}
+
+h4 {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: 1.4; // 28px
+  margin-top: 28px;
+  margin-bottom: floor(($line-height-computed / 2.5));
+}
+
+h5, h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-medium;
+  line-height: 1.4; // 27px
+  margin-top: 28px;
+  margin-bottom: floor(($line-height-computed / 4));
+}
+
+//== Paragraphs
+//
+//##
+p {
+  margin: 0 0 floor(($line-height-computed * .7));
+}
+
+//== Lists
+//
+//## Unordered and Ordered lists
+ul, ol {
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  margin-bottom: floor(($line-height-computed * .7));
 }

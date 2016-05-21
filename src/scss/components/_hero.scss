@@ -18,7 +18,7 @@ $gradient-overlay-color: #0d111c;
 
 // Hero color overlay
 .hero-color {
-  background: transparentize($teritary-blue-dark, .63);
+  background: transparentize($teritary-blue-dark, .45);
 }
 
 // Hero gradient overlay
@@ -33,17 +33,28 @@ $gradient-overlay-color: #0d111c;
 .hero-heading {
   text-align: center;
   color: #fff;
-  margin: 0 auto 170px;
-  width: 720px;
-  font-size: 26px;
-  line-height: 34px;
-  text-shadow: 0 1px 1px $teritary-blue-dark-darker10;
+  margin: 0 auto 160px;
+  width: 750px;
+  @extend .hero-text;
+  text-shadow: 1px 1px 1px $teritary-blue-dark-darker10;
   h2 {
-    font-size: 53px;
-    line-height: 60px;
-    text-shadow: 0 1px 1px $teritary-blue-dark-darker10;
+    @extend .hero-title;
+    text-shadow: 1px 1px 1px $teritary-blue-dark-darker10;
     margin-bottom: 40px;
+    color: #fff;
   }
+}
+
+// Hero title
+.hero-title {
+  font-size: $font-size-xxxxl;
+  line-height: 1.1320754717; // ~60px
+  font-weight: $font-weight-light;
+}
+
+// Hero text
+.hero-text {
+  @extend .lead-xl;
 }
 
 //== Hero Teaser
@@ -54,7 +65,7 @@ $gradient-overlay-color: #0d111c;
     background: #fff;
     text-align: center;
     padding-top: $grid-gutter-width;
-    border-radius: 1px;
+    border-radius: 2px;
     transition: all .2s ease-in;
   }
 
@@ -63,13 +74,20 @@ $gradient-overlay-color: #0d111c;
     padding: 0 $grid-gutter-width;
   }
 
+  .hero-teaser-title {
+    font-size: $font-size-xl;
+  }
+
   .hero-teaser-body {
     display: block;
     padding: 0 $grid-gutter-width $grid-gutter-width;
+    min-height: 120px;
   }
 
   footer {
     display: block;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-light;
     a {
       display: block;
       background: $primary-blue;
@@ -77,6 +95,8 @@ $gradient-overlay-color: #0d111c;
       padding: ($grid-gutter-width / 2) $grid-gutter-width;
       color: #fff;
       text-decoration: none;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
     }
   }
 

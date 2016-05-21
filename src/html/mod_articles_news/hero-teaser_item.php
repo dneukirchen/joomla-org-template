@@ -15,7 +15,7 @@ $showReadmore = (isset($item->link) && $item->readmore != 0 && $params->get('rea
 					<span class="<?php echo $images->image_intro_alt; ?>"></span>
 				</span>
 		<?php endif; ?>
-		<<?php echo $itemHeading; ?> class="hero-teaser-heading">
+		<<?php echo $itemHeading; ?> class="hero-teaser-title">
 		<?php if ($params->get('link_titles') && $item->link != '') : ?>
 			<a href="<?php echo $item->link; ?>">
 				<?php echo $item->title; ?>
@@ -36,9 +36,9 @@ $showReadmore = (isset($item->link) && $item->readmore != 0 && $params->get('rea
 	<?php if (!empty($urls->urla) || $showReadmore) : ?>
 		<footer>
 			<?php if (!empty($urls->urla)) : ?>
-				<a href="<?php echo $urls->urla; ?>"><?php echo (!empty($urls->urlatext) ? $urls->urlatext : $urls->urla); ?> <span class="fa fa-angle-right"></span></a>
+				<a href="<?php echo $urls->urla; ?>"><?php echo (!empty($urls->urlatext) ? $urls->urlatext : $urls->urla); ?> &rarr;</a>
 			<?php else : ?>
-				<a href="<?php echo $item->link; ?>"><?php echo $item->linkText; ?> <span class="fa fa-angle-right"></span></a>
+				<a href="<?php echo $item->link; ?>"><?php echo $item->linkText; ?> &rarr;</a>
 			<?php endif; ?>
 		</footer>
 	<?php endif; ?>

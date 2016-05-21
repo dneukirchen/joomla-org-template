@@ -1,0 +1,41 @@
+//===============
+// Utility classes
+//===============
+.holder {
+  position: relative;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+//== Opacity
+//
+//##
+.opacity-25 {
+@include opacity(.25);
+}
+
+.opacity-50 {
+  @include opacity(.50);
+}
+
+.opacity-75 {
+  @include opacity(.75);
+}
+
+.opacity-100 {
+  @include opacity(1);
+}
+
+//== Margins
+//
+//##
+
+// TODO
+
+//== Paddings
+//
+//##
+
+// TODO

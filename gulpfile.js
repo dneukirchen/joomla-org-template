@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var filter = require('gulp-filter');
 var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
-var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
@@ -29,12 +28,10 @@ gulp.task('css', function () {
     };
 
     return gulp.src('./src/scss/template.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass(sassConfig).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(minifyCss())
         .pipe(concat('template.min.css'))
-        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest('./src/css/'));
 });
 
@@ -47,10 +44,8 @@ gulp.task('js', function () {
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
             './src/js/template.js',
         ])
-        .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('template.min.js'))
-        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest('./src/js/'));
 });
 
