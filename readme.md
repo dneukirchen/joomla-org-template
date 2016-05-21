@@ -3,8 +3,10 @@
 ## Module positions
 
 ## TODO 
+* mobile/tablet adjustments
 * chrome overflow/border-radius bug
 * custom icon set
 * button style adjustments
 * Shrinked transition
 * scroll transitions
+* compare with the features from the old template
