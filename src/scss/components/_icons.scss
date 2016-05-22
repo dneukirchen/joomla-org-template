@@ -177,3 +177,11 @@ $shadow-color-darken-percent: 16%;
     @include icon-shadowed(#c25a35);
   }
 }
+
+// neutral colors
+.icon-circled-white {
+  @include icon-circled-variant(#fff, $text-color);
+  &.icon-shadowed {
+    @include icon-shadowed($neutral-gray-lighter);
+  }
+}
