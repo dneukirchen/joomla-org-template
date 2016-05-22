@@ -1,5 +1,5 @@
 <?php defined('_JEXEC') or die;
-$logos = glob(dirname(dirname(__FILE__)) .'/img/using-joomla/*.{jpg,png}');
+$logos = glob(__DIR__ .'/img/using-joomla/*.{jpg,png}', GLOB_BRACE);
 ?>
 <div class="col-xs-8 col-xs-offset-2">
 	<h2 class="section-title">Who is using Joomla!?</h2>
@@ -8,6 +8,8 @@ $logos = glob(dirname(dirname(__FILE__)) .'/img/using-joomla/*.{jpg,png}');
 
 <div class="row">
 	<?php foreach($logos as $logo) : ?>
-		<div class="col-md-3"></div>
+		<div class="col-xs-6 col-md-3">
+			<div class="logo" style="background-image: url('<?php echo $templatePath . '/demo/img/using-joomla/' . basename($logo); ?>')"></div>
+		</div>
 	<?php endforeach; ?>
 </div>
