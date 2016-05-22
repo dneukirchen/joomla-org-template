@@ -1,3 +1,4 @@
+<?php defined('_JEXEC') or die; ?>
 <h2 class="section-title">Features & Benefits</h2>
 <ul class="list-features list-unstyled">
 	<li class="col-sm-3">

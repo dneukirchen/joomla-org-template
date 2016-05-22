@@ -1,3 +1,4 @@
+<?php defined('_JEXEC') or die; ?>
 <div class="col-md-6">
 	<h2 class="text-default">Why Joomla?</h2>
 	<p>Hundreds of developers have been improving Joomla since the first version was released in 2005.

@@ -23,7 +23,7 @@
 //
 //##
 .finder {
-  background: #fff url('../img/finder-bg.jpg') center bottom no-repeat;
+  background: #fff url('../demo/img/finder-bg.jpg') center bottom no-repeat;
   margin-bottom: 1px;
   .pretty-select {
     width: 270px;
@@ -100,7 +100,7 @@
       background-color: transparentize($secondary-orange, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/installations-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/installations-bg.jpg') center no-repeat
     }
   }
   .extensions {
@@ -109,7 +109,7 @@
       background-color: transparentize($primary-blue, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/extensions-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/extensions-bg.jpg') center no-repeat
     }
   }
   .support {
@@ -118,7 +118,7 @@
       background-color: transparentize($additional-secondary-green, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/support-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/support-bg.jpg') center no-repeat
     }
   }
   .volunteers {
@@ -127,7 +127,7 @@
       background-color: transparentize($additional-secondary-olive, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/volunteers-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/volunteers-bg.jpg') center no-repeat
     }
   }
   .development {
@@ -136,7 +136,7 @@
       background-color: transparentize($additional-secondary-purple, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/development-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/development-bg.jpg') center no-repeat
     }
   }
   .languages {
@@ -145,7 +145,17 @@
       background-color: transparentize($additional-secondary-red, .45);
     }
     .numbers-img {
-      background: url('../img/numbers/languages-bg.jpg') center no-repeat
+      background: url('../demo/img/numbers/languages-bg.jpg') center no-repeat
     }
+  }
+}
+
+//== Who is using joomla
+//
+//##
+.who-is-using {
+  text-align: center;
+  h2 {
+    color: $text-color;
   }
 }

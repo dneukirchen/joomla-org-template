@@ -1,3 +1,4 @@
+<?php defined('_JEXEC') or die; ?>
 <div class="col-md-4">
 	<h3>Find a Joomla! Extension</h3>
 	<p>I am looking for an addon in the category:</p>

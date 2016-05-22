@@ -1,3 +1,4 @@
+<?php defined('_JEXEC') or die; ?>
 <div class="col-md-12">
 	<small>You are here: Home</small>
 	<h1 class="hero-title">This is the hero title</h1>

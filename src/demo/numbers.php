@@ -1,3 +1,4 @@
+<?php defined('_JEXEC') or die; ?>
 <div class="col-md-2 numbers-box installations">
 	<div class="numbers-text">
 		<span class="number">65 <sup>+</sup></span><br/>Million<br/>Installations
