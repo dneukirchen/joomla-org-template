@@ -160,7 +160,7 @@
   }
   .logo {
     width: 200px;
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
     background-size: cover;
     background: center no-repeat;
@@ -174,5 +174,20 @@
   }
   .logo:hover {
     filter:none;
+  }
+}
+
+//== Showcase
+//
+//##
+.showcase {
+  p {
+    margin: 0;
+    padding: 2px 0 1px;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-light;
+    .fa {
+      margin-left: 5px;
+    }
   }
 }
