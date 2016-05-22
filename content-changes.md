@@ -51,3 +51,14 @@
 	* menu assignment: only frontpage
 	* layout: "hero-teaser"
 	
+## Info
+### Announcements	
+* Copy the Joomla Announcements module
+* Change the settings to the following:
+	* Title: "Announcements"
+	* Module position: "Announcements" (from rheinsurfen template)
+	* Menu assignment: only frontpage
+	* Alternate layout: "announcements" (from rheinsurfen template)
+	* Bootstrap size: 0
+	
+	

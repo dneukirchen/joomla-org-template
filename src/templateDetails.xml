@@ -26,6 +26,8 @@
 	</files>
 	<positions>
 		<position>hero</position>
+		<position>announcements</position>
+		<position>position-0</position>
 		<position>debug</position>
 	</positions>
 	<config></config>
