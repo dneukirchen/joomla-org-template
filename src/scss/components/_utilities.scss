@@ -35,6 +35,38 @@
   background: $tertiary-blue-dark;
 }
 
+//== Grid
+//
+//##
+
+// No gutter
+.container {
+  .row {
+    &.no-gutter {
+      margin-left: 0;
+      margin-right: 0;
+
+      > [class*='col-']:not(:first-child),
+      > [class*='col-']:not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.container-fluid {
+  .row {
+    &.no-gutter {
+      > [class*='col-']:not(:first-child),
+      > [class*='col-']:not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
 //== Margins & Paddings
 //
 //##
@@ -44,10 +76,10 @@ $spacer: 16px;
 $spacer-x: $spacer;
 $spacer-y: $spacer;
 $spacers: (
-  0: (x: 0, y: 0),
-  1: (x: $spacer-x, y: $spacer-y),
-  2: (x: ($spacer-x * 1.5), y: ($spacer-y * 1.5)),
-  3: (x: ($spacer-x * 3), y: ($spacer-y * 3))
+        0: (x: 0, y: 0),
+        1: (x: $spacer-x, y: $spacer-y),
+        2: (x: ($spacer-x * 1.5), y: ($spacer-y * 1.5)),
+        3: (x: ($spacer-x * 3), y: ($spacer-y * 3))
 );
 
 .m-x-auto {

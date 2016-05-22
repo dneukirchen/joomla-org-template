@@ -9,6 +9,8 @@
 	</p>
 </div>
 <div class="col-md-6">
-	<iframe src="https://www.youtube.com/embed/HMRM7CTnFAA?rel=0&controls=1&theme=light&showinfo=0"
-	        width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe src="https://www.youtube.com/embed/HMRM7CTnFAA?rel=0&controls=1&theme=light&showinfo=0"
+		        width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+	</div>
 </div>

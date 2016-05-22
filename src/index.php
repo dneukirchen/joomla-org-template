@@ -66,7 +66,9 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	</nav>
 </header>
 <main>
-	<jdoc:include type="message"/>
+	<?php if(count($app->getMessageQueue())) : ?>
+		<jdoc:include type="message"/>5
+	<?php endif; ?>
 	<?php if ($this->countModules('hero')) : ?>
 		<section id="hero">
 			<div class="hero-overlay">
@@ -106,7 +108,7 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 	</section>
 	<section class="section-4 numbers">
 		<div class="container-fluid">
-			<div class="row"><?php include __DIR__ . '/demo/numbers.php'; ?></div>
+			<div class="row no-gutter"><?php include __DIR__ . '/demo/numbers.php'; ?></div>
 		</div>
 	</section>
 	<section id="typo">

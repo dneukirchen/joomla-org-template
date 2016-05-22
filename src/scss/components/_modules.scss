@@ -50,27 +50,102 @@
   }
   .numbers-text {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-    text-align: right;
+    bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: $font-weight-light;
   }
-  // Color variations
+  .number {
+    font-size: 60px;
+    sup {
+      font-size: 28px;
+      left: -.3em;
+      top: -0.8em;
+    }
+  }
+  .numbers-overlay {
+    width: 100%;
+    height: 100%;
+  }
+  .numbers-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  // Color & Background variations
+  .installations, .extensions, .support {
+    .numbers-text {
+      right: 20px;
+      text-align: right;
+    }
+    @media (min-width: $screen-md) {
+      .numbers-text {
+        right: 30px;
+      }
+      .number {
+        margin-right: -25px;
+      }
+    }
+  }
+  .volunteers, .development, .languages {
+    .numbers-text {
+      left: 20px;
+    }
+  }
   .installations {
     background: $secondary-orange;
+    .numbers-overlay {
+      background-color: transparentize($secondary-orange, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/installations-bg.jpg') center no-repeat
+    }
   }
   .extensions {
     background: $primary-blue;
+    .numbers-overlay {
+      background-color: transparentize($primary-blue, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/extensions-bg.jpg') center no-repeat
+    }
   }
   .support {
     background: $additional-secondary-green;
+    .numbers-overlay {
+      background-color: transparentize($additional-secondary-green, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/support-bg.jpg') center no-repeat
+    }
   }
   .volunteers {
     background: $additional-secondary-olive;
+    .numbers-overlay {
+      background-color: transparentize($additional-secondary-olive, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/volunteers-bg.jpg') center no-repeat
+    }
   }
   .development {
-    background: $additional-secondary-purple
+    background: $additional-secondary-purple;
+    .numbers-overlay {
+      background-color: transparentize($additional-secondary-purple, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/development-bg.jpg') center no-repeat
+    }
   }
   .languages {
     background: $additional-secondary-red;
+    .numbers-overlay {
+      background-color: transparentize($additional-secondary-red, .45);
+    }
+    .numbers-img {
+      background: url('../img/numbers/languages-bg.jpg') center no-repeat
+    }
   }
 }
