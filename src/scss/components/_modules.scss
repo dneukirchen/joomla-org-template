@@ -199,13 +199,24 @@
 .info {
   h2 {
     color: $text-color;
+    margin-top: 0;
   }
   .module {
-    padding: 10px;
+    padding: 50px 0;
   }
   .announcements {
+    .announcement {
+      padding-bottom: $grid-gutter-width / 2;
+      margin-bottom: $grid-gutter-width;
+      border-bottom: 1px solid #dcdcdc;
+      &:last-child {
+        border: none;
+        margin-bottom: 0;
+      }
+    }
     .announcement-title {
       color: $text-color;
+      margin-top: 8px;
       a {
         color: $text-color;
       }
@@ -217,7 +228,7 @@
   .events {
     position: relative;
     z-index: 0;
-    padding: 10px 0 10px percentage((1 / $grid-columns));
+    padding: 50px 0 50px percentage((1 / $grid-columns));
     .events-bg {
       background-color: #fff;
       left: 0;
@@ -236,7 +247,7 @@
   .contribution {
     position: relative;
     z-index: 0;
-    padding: 10px 0 10px percentage((1 / $grid-columns));
+    padding: 50px 0 50px percentage((1 / $grid-columns));
     .contribution-bg {
       background-color: #f9f9f9;
       left: 0;

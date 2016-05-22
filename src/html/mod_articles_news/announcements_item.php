@@ -21,6 +21,7 @@ else
 }
 ?>
 <div class="announcement">
+	<em class="announcement-date"><?php echo JHtml::_('date', $item->publish_up, JText::_('DATE_FORMAT_LC3')); ?></em>
 	<?php if ($params->get('item_title')) : ?>
 		<<?php echo $item_heading; ?> class="announcement-title<?php echo $params->get('moduleclass_sfx'); ?>">
 		<?php if ($params->get('link_titles') && $item->link != '') : ?>
