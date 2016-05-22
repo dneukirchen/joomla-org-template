@@ -154,11 +154,6 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 			</div>
 		</div>
 	</section>
-	<section id="typo">
-		<div class="container">
-			<div class="row"><?php include __DIR__ . '/demo/typography.php'; ?></div>
-		</div>
-	</section>
 </main>
 <footer>
 </footer>
