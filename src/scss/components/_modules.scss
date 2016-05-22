@@ -203,13 +203,14 @@
   }
   .module {
     padding: 50px 0;
+    position: relative;
   }
   .announcements {
     .announcement {
       padding-bottom: $grid-gutter-width / 2;
       margin-bottom: $grid-gutter-width;
       border-bottom: 1px solid #dcdcdc;
-      &:last-child {
+      &:last-of-type {
         border: none;
         margin-bottom: 0;
       }
@@ -221,8 +222,13 @@
         color: $text-color;
       }
     }
-    .readmore {
-      color: $brand-danger;
+    .read-all {
+      position: absolute;
+      top: 64px;
+      right: ceil(($grid-gutter-width / 2));
+      span {
+        margin-left: 5px;
+      }
     }
   }
   .events {
