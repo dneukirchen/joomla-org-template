@@ -40,6 +40,7 @@ gulp.task('css', function () {
  */
 gulp.task('js', function () {
     return gulp.src([
+            config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
             './src/js/template.js',
