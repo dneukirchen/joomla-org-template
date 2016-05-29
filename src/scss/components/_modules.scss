@@ -22,8 +22,15 @@
   }
   .feature {
     padding: ceil(($grid-gutter-width / 2)) 0;
+    text-shadow: 1px 1px 1px #0d111c;
     .icon-circled {
       margin-bottom: 20px;
+      transition: all .2s ease-in;
+      transform: scale(1);
+      &:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 $grid-gutter-width #0d111c;;
+      }
     }
   }
 }
