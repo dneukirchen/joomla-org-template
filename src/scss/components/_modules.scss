@@ -11,8 +11,17 @@
     color: #fff;
     margin-bottom: 50px;
   }
+  ul.list-features {
+    li {
+      // Adjust layout on mobile devices
+      @media (max-width: 420px) {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
   .feature {
-    padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
+    padding: ceil(($grid-gutter-width / 2)) 0;
     .icon-circled {
       margin-bottom: 20px;
     }
@@ -174,7 +183,7 @@
   }
   .logo:hover {
     opacity: 1;
-    filter:none;
+    filter: none;
   }
 }
 
