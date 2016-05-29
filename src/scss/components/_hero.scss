@@ -32,12 +32,17 @@ $hero-teaserbox-breakpoint: $screen-md-min;
 .hero-heading {
   text-align: center;
   color: #fff;
-  margin: 0 auto 160px;
+  margin: 0 ($grid-gutter-width / 2) 80px;
   @extend .hero-text;
-  padding: 0 $grid-gutter-width;
   text-shadow: 1px 1px 1px $tertiary-blue-dark-darker10;
+  @media (min-width: $screen-xs-max) {
+    margin: 0 $grid-gutter-width 80px;
+  }
+  @media (min-width: $screen-sm-min) {
+    margin: 0 $grid-gutter-width 160px;
+  }
   @media (min-width: $screen-md-min) {
-    padding: 0;
+    margin: 0 auto 160px;
     width: 800px;
   }
   h2 {
@@ -50,14 +55,22 @@ $hero-teaserbox-breakpoint: $screen-md-min;
 
 // Hero title
 .hero-title {
-  font-size: $font-size-xxxxl;
+  font-size: 36px;
   line-height: 1.1320754717; // ~60px
   font-weight: $font-weight-light;
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-xxxxl;
+  }
 }
 
 // Hero text
 .hero-text {
-  @extend .lead-xl;
+  font-size: $font-size-lg;
+  line-height: 1.3846153846; // ~34px
+  font-weight: $font-weight-light;
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-xl;
+  }
 }
 
 //== Hero Teaser
