@@ -11,10 +11,13 @@
 
 .navbar-brand {
   height: auto;
-  margin: 15px 0 0;
+  margin: 0;
   padding-top: 7px;
   padding-bottom: 7px;
   transition: all .6s ease;
+  @media (min-width: $grid-float-breakpoint) {
+    margin: 15px 0 0;
+  }
   a {
     &:hover {
       text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 1px;
@@ -24,43 +27,54 @@
   span {
     font-family: Asenine Wide;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 33px;
     color: #fff;
     vertical-align: middle;
     margin-left: 5px;
     transition: opacity 1s ease;
+    @media (min-width: $grid-float-breakpoint) {
+      font-size: 40px;
+    }
     sup {
       font-size: 10px;
       top: -1.8em;
     }
   }
   img {
+    width: 35px;
+    height: auto;
+    @media (min-width: $grid-float-breakpoint) {
+      width: auto;
+    }
     transition: all .6s ease;
   }
 }
+
 // b3 override
 .navbar>.container .navbar-brand {
   margin-left: 0;
 }
 
 // Shrink effect
-.nav-shrinked {
-  .navbar-header {
-    float: left;
-    .navbar-brand {
-      margin: 0 0 0 -7px;
-      padding: 7px;
-      width: 50px;
-      height: 50px;
-      overflow: hidden;
-      img {
-        width: 35px;
-        height: auto;
-      }
-      span {
-        color: $tertiary-blue-dark;
-        opacity: 0;
-        visibility: hidden;
+@media (min-width: $grid-float-breakpoint) {
+  .nav-shrinked {
+    .navbar-header {
+      float: left;
+      .navbar-brand {
+        margin: 0 0 0 -7px;
+        padding: 7px;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        img {
+          width: 35px;
+          height: auto;
+        }
+        span {
+          color: $tertiary-blue-dark;
+          opacity: 0;
+          visibility: hidden;
+        }
       }
     }
   }
@@ -101,8 +115,10 @@
 //
 //##
 .navbar-form {
-  padding-right: 0; // TODO check collapsed viewports
-  padding-left: 0; // TODO check collapsed viewports
+  @media (min-width: $grid-float-breakpoint) {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .form-control {
     color: $tertiary-blue-dark-white70;
     background: $tertiary-blue-dark-darker10;

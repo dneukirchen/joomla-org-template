@@ -122,6 +122,10 @@ $headings-font-weight: $font-family-serif;
 //== Navbar
 //
 //##
+
+// Basics of a navbar
+$navbar-collapse-max-height: 100%;
+
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-bg: $tertiary-blue-dark;
