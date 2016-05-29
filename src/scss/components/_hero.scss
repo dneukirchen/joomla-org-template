@@ -4,6 +4,9 @@
 
 $gradient-overlay-color: #0d111c;
 
+// Point at which the hero teasers become boxes
+$hero-teaserbox-breakpoint: $screen-md-min;
+
   //== Hero
 //
 //##
@@ -60,14 +63,20 @@ $gradient-overlay-color: #0d111c;
   article {
     background: #fff;
     text-align: center;
-    padding-top: $grid-gutter-width;
     border-radius: 2px;
     transition: all .2s ease-in;
+    margin-bottom: floor($grid-gutter-width / 2);
+    @media (min-width: $hero-teaserbox-breakpoint) {
+      padding-top: $grid-gutter-width;
+    }
   }
 
   header {
-    display: block;
+    display: none;
     padding: 0 $grid-gutter-width;
+    @media (min-width: $hero-teaserbox-breakpoint) {
+      display: block;
+    }
   }
 
   .icon-circled {
@@ -79,9 +88,12 @@ $gradient-overlay-color: #0d111c;
   }
 
   .hero-teaser-body {
-    display: block;
+    display: none;
     padding: 0 $grid-gutter-width $grid-gutter-width;
     min-height: 120px;
+    @media (min-width: $hero-teaserbox-breakpoint) {
+      display: block;
+    }
   }
 
   footer {
