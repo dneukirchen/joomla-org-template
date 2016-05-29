@@ -33,9 +33,13 @@ $hero-teaserbox-breakpoint: $screen-md-min;
   text-align: center;
   color: #fff;
   margin: 0 auto 160px;
-  width: 750px;
   @extend .hero-text;
+  padding: 0 $grid-gutter-width;
   text-shadow: 1px 1px 1px $tertiary-blue-dark-darker10;
+  @media (min-width: $screen-md-min) {
+    padding: 0;
+    width: 800px;
+  }
   h2 {
     @extend .hero-title;
     text-shadow: 1px 1px 1px $tertiary-blue-dark-darker10;
