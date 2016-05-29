@@ -2,6 +2,9 @@
 // Navbar
 //===============
 
+$navbar-form-collapse-breakpoint-min: $screen-sm-min;
+$navbar-form-collapse-breakpoint-max: $screen-sm-max;
+
 //== Navbar header and brand
 //
 //##
@@ -51,7 +54,7 @@
 }
 
 // b3 override
-.navbar>.container .navbar-brand {
+.navbar > .container .navbar-brand {
   margin-left: 0;
 }
 
@@ -79,20 +82,36 @@
     }
   }
 }
+
 //== Common navbar styles
 //
 //##
 #navbar {
-  > ul {
+  // Adjust the navbar size for sm and views
+  ul.navbar-nav {
     > li {
       > a {
-        font-weight: $font-weight-light;
         font-size: 18px;
+        font-weight: $font-weight-light;
+        @media (min-width: $screen-sm-min) {
+          font-size: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        @media (min-width: $screen-md-min) {
+          font-size: 16px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        @media (min-width: $screen-lg-min) {
+          font-size: 18px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
       }
     }
   }
 }
-
 
 //== Main nav
 //
@@ -116,7 +135,6 @@
 //##
 .navbar-form {
   @media (min-width: $grid-float-breakpoint) {
-    padding-right: 0;
     padding-left: 0;
   }
   .form-control {
@@ -151,5 +169,23 @@
   :-ms-input-placeholder {
     font-weight: $font-weight-light;
     color: $tertiary-blue-dark-white70;
+  }
+
+  // Collapse effect
+  @media (min-width: $navbar-form-collapse-breakpoint-min) and (max-width: $navbar-form-collapse-breakpoint-max) {
+    .input-group {
+      .form-control {
+        display: none; // TODO remove display none, when we wanna use a hover/click transition
+        width: 0;
+        padding: 0;
+        border: none;
+      }
+    }
+    .input-group-btn {
+      .btn {
+        border-top-left-radius: $rounded-border-radius-base;
+        border-bottom-left-radius: $rounded-border-radius-base;
+      }
+    }
   }
 }
