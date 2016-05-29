@@ -8,7 +8,17 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    // Numbers module
+    //===============
+    // Waypoints
+    //===============
+
+    // Features
+    $('.features').waypoint(function(direction) {
+        
+        this.destroy();
+    }, {offset: 200});
+
+    // Numbers
     $('.numbers').waypoint(function(direction) {
         $('.count-up').countTo({
             speed: 1500,
