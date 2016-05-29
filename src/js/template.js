@@ -9,8 +9,11 @@ jQuery(document).ready(function ($) {
     });
 
     // Numbers module
-    $('.count-up').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    $('.numbers').waypoint(function(direction) {
+        $('.count-up').countTo({
+            speed: 1500,
+            refreshInterval: 30
+        });
+        this.destroy();
+    }, {offset: 400});
 });
