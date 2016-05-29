@@ -121,11 +121,14 @@ $hero-teaserbox-breakpoint: $screen-md-min;
       display: block;
       background: $primary-blue;
       color: #fff;
-      padding: ($grid-gutter-width / 2) $grid-gutter-width;
+      padding: 10px $grid-gutter-width;
       color: #fff;
       text-decoration: none;
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
+      @media (min-width: $hero-teaserbox-breakpoint) {
+        padding: ($grid-gutter-width / 2) $grid-gutter-width;
+      }
     }
   }
 
@@ -137,7 +140,10 @@ $hero-teaserbox-breakpoint: $screen-md-min;
     z-index: 1;
     &:hover {
       z-index: 2;
-      transform: scale(1.05);
+      transform: scale(1.02);
+      @media (min-width: $hero-teaserbox-breakpoint) {
+        transform: scale(1.05);
+      }
       article {
         box-shadow: 0 0 $grid-gutter-width $gradient-overlay-color;
       }
