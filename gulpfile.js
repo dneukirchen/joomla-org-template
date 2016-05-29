@@ -43,8 +43,9 @@ gulp.task('js', function () {
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
-            config.bowerDir + '/waypoints/lob/jquery.waypoints.js',
-            './src/js/template.js',
+            config.bowerDir + '/waypoints/lib/jquery.waypoints.js',
+            config.bowerDir + '/Counter-Up/jquery.counterup.js',
+            './src/js/template.js'
         ])
         .pipe(uglify())
         .pipe(concat('template.min.js'))

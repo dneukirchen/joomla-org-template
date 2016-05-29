@@ -7,4 +7,10 @@ jQuery(document).ready(function ($) {
             $('body').removeClass('nav-shrinked');
         }
     });
+
+    // Numbers module
+    $('.count-up').counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
