@@ -12,8 +12,8 @@ jQuery(document).ready(function ($) {
     $('.numbers').waypoint(function(direction) {
         $('.count-up').countTo({
             speed: 1500,
-            refreshInterval: 30
+            refreshInterval: 40
         });
         this.destroy();
-    }, {offset: 400});
+    }, {offset: 350});
 });
