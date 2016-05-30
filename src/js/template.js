@@ -9,21 +9,42 @@ jQuery(document).ready(function ($) {
     });
 
     //===============
-    // Waypoints
+    // Scrollmagic
     //===============
 
-    // Features
-    $('.features').waypoint(function(direction) {
-        
-        this.destroy();
-    }, {offset: 200});
+    var controller = new ScrollMagic.Controller();
 
-    // Numbers
-    $('.numbers').waypoint(function(direction) {
-        $('.count-up').countTo({
-            speed: 1500,
-            refreshInterval: 40
-        });
-        this.destroy();
-    }, {offset: 350});
+    new ScrollMagic.Scene({
+        triggerElement: ".why-joomla"
+    })
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: ".features"
+    })
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: ".finder"
+    })
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: ".numbers",
+        offset: -150,
+        reverse: true,
+    })
+        .addIndicators()
+        .on("start", function (e) {
+            if(e.scrollDirection === "FORWARD") {
+                $('.count-up').countTo({
+                    speed: 1500,
+                    refreshInterval: 40
+                });
+            }
+        })
+        .addTo(controller);
 });
