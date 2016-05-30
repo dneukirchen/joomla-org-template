@@ -17,8 +17,6 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "font-awesome": "fontawesome#^4.6.1",
-    "waypoints": "^4.0.0",
-    "Counter-Up": "git@github.com:digsite/Counter-Up.git#^1.0.0",
     "jquery-countTo": "^1.2.0"
   }
 }

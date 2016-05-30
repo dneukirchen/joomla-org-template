@@ -43,7 +43,7 @@ gulp.task('js', function () {
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
             config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
-            config.bowerDir + '/waypoints/lib/jquery.waypoints.js',
+            config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
             config.bowerDir + '/jquery-countTo/jquery.countTo.js',
             './src/js/template.js'
         ])
