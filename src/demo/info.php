@@ -1,8 +1,8 @@
 <?php defined('_JEXEC') or die; ?>
-<div class="col-sm-5">
+<div class="col-md-5">
 	<jdoc:include type="modules" name="announcements" style="default"/>
 </div>
-<div class="col-sm-7">
+<div class="col-md-7">
 	<div class="events">
 		<h2>Latest Event Gallery</h2>
 		<a href="http://jandbeyond.org/">
