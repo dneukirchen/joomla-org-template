@@ -16,6 +16,7 @@ body {
   @media (min-width: $grid-float-breakpoint) {
     padding-top: 122px;
   }
+  // -webkit-font-smoothing: antialiased;
 }
 header, main, footer {
   display: table-row;
