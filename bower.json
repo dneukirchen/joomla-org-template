@@ -17,6 +17,8 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "font-awesome": "fontawesome#^4.6.1",
-    "jquery-countTo": "^1.2.0"
+    "jquery-countTo": "^1.2.0",
+    "animate.css": "^3.5.1",
+    "animate-sass": "^0.6.6"
   }
 }

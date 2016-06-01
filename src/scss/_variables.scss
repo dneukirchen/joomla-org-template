@@ -112,7 +112,7 @@ $font-size-h1: $font-size-xxxl;
 $font-size-h2: $font-size-xxl;
 $font-size-h3: ceil(($font-size-base * 1.5)); // ~24px
 $font-size-h4: $font-size-lg;
-$font-size-h5: ceil(($font-size-base * 1.0625));  // ~17px
+$font-size-h5: ceil(($font-size-base * 1.0625)); // ~17px
 $font-size-h6: $font-size-h5;
 
 //$headings-line-height:
@@ -144,3 +144,11 @@ $btn-border-radius-small: $rounded-border-radius-small;
 //
 //##
 $input-border-radius: $rounded-border-radius-base;
+
+//===============
+// Animate css
+// To include an animation module in the compiled css file, simply set it's attribute below to true
+//===============
+
+// Fade Enter
+$use-fadeInUp: true;

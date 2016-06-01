@@ -34,6 +34,11 @@ $hero-teaserbox-breakpoint: $screen-md-min;
   color: #fff;
   margin: 0 ($grid-gutter-width / 2) 80px;
   @extend .hero-text;
+  // Animation
+  @extend .animated;
+  @extend .fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
   text-shadow: 1px 1px 1px $tertiary-blue-dark-darker10;
   @media (min-width: $screen-xs-max) {
     margin: 0 $grid-gutter-width 80px;
