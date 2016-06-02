@@ -349,9 +349,13 @@
   font-size: $font-size-xs;
   color: $tertiary-blue-dark-white70;
   line-height: 20px;
-  img {
+  .joomla-logo {
     width: 20px;
-    height: 20px;
+    height: auto;
+  }
+  .rochen-logo {
+    height: 25px;
+    width: auto;
   }
   ul {
     float: right;
