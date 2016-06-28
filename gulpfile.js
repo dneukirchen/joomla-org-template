@@ -8,10 +8,38 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var svgSprite = require('gulp-svg-sprite');
 
 // The basic configuration
 var config = {
     bowerDir: './bower_components',
+    svgSprites: {
+        shape: {
+            shape: {
+                dimension: {
+                    maxWidth: 24,
+                    maxHeight: 24
+                }
+            },
+            transform: [
+                {
+                    svgo: {
+                        plugins: [
+                            {removeAttrs: {attrs: '(stroke|fill)'}}
+                        ]
+                    }
+                }
+            ]
+        },
+        mode: {
+            symbol: {
+                dest: 'img',
+                sprite: 'icons.svg',
+                prefix: '.icon-%s',
+                bust: false
+            }
+        }
+    }
 };
 
 /**
@@ -27,7 +55,7 @@ gulp.task('css', function () {
         includePaths: [config.bowerDir]
     };
 
-    return gulp.src('./src/scss/template.scss')
+    return gulp.src('./src/source/styles/template.scss')
         .pipe(sass(sassConfig).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(minifyCss())
@@ -46,7 +74,7 @@ gulp.task('js', function () {
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
             config.bowerDir + '/jquery-countTo/jquery.countTo.js',
-            './src/js/template.js'
+            './src/scripts/template.js'
         ])
         .pipe(uglify())
         .pipe(concat('template.min.js'))
@@ -54,11 +82,12 @@ gulp.task('js', function () {
 });
 
 /**
- * Fonts (copy the fonts to the public dir)
+ * Create the svg sprites
  */
-gulp.task('fonts', function () {
-    return gulp.src(config.fontAwesomeDir + '/fonts/**.*')
-        .pipe(gulp.dest('./src/fonts'));
+gulp.task('svg', function () {
+    gulp.src('./src/source/icons/svg/**/*.svg')
+        .pipe(svgSprite(config.svgSprites))
+        .pipe(gulp.dest('./src'));
 });
 
 /**

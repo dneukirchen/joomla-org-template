@@ -3,9 +3,9 @@
 ## Module positions
 
 ## TODO 
-* mobile/tablet adjustments
-* chrome overflow/border-radius bug
+* ~~mobile/tablet adjustments~~
 * custom icon set
+* chrome overflow/border-radius bug
 * button style adjustments
 * Shrinked transition
 * scroll transitions
