@@ -74,7 +74,7 @@ gulp.task('js', function () {
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
             config.bowerDir + '/jquery-countTo/jquery.countTo.js',
-            './src/scripts/template.js'
+            './src/source/scripts/template.js'
         ])
         .pipe(uglify())
         .pipe(concat('template.min.js'))
@@ -94,6 +94,6 @@ gulp.task('svg', function () {
  * Default Watcher
  */
 gulp.task('default', ['css', 'js'], function () {
-    gulp.watch(['./src/scss/**/*.scss'], ['css']);
-    gulp.watch(['./src/js/**/*.js'], ['js']);
+    gulp.watch(['./src/source/styles/**/*.scss'], ['css']);
+    gulp.watch(['./src/source/scripts/**/*.js'], ['js']);
 });

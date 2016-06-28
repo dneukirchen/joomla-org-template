@@ -8,6 +8,15 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Init SVG Holder
+    var templateName = 'rheinsurfen';
+    $.get("/redes/templates/"+templateName+"/img/icons.svg", function(data) {
+        $('<div class="svg-holder"></div>')
+            .hide()
+            .append(new XMLSerializer().serializeToString(data.documentElement))
+            .prependTo($('body'));
+    });
+
     //===============
     // Scrollmagic
     //===============
