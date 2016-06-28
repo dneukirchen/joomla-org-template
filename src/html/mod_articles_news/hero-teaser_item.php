@@ -12,8 +12,8 @@ $showReadmore = (isset($item->link) && $item->readmore != 0 && $params->get('rea
 			     class="hero-teaser-image"/>
 		<?php elseif (!empty($images->image_intro_alt)) : ?>
 			<span class="icon-circled icon-circled-sm icon-shadowed">
-					<span class="<?php echo $images->image_intro_alt; ?>"></span>
-				</span>
+				<?php echo HtmlHelper::svgIcon($images->image_intro_alt); ?>
+			</span>
 		<?php endif; ?>
 		<<?php echo $itemHeading; ?> class="hero-teaser-title">
 		<?php if ($params->get('link_titles') && $item->link != '') : ?>

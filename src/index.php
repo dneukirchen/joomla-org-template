@@ -2,6 +2,7 @@
 
 // Load the template helpers
 require_once __DIR__ . '/helpers/navbar.php';
+require_once __DIR__ . '/helpers/html.php';
 
 // Set some variables used by the template
 $app = JFactory::getApplication();
