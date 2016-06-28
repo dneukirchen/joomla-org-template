@@ -1,7 +1,7 @@
 <?php defined('_JEXEC') or die; ?>
 
 
-<div class="col-md-3">
+<div class="col-sm-6 col-md-3">
 	<h4 class="text-primary">Get Started</h4>
 	<ul>
 		<li><a href="#">Launch on Joomla.com</a></li>
@@ -13,7 +13,7 @@
 		<li><a href="#">Community Forum</a></li>
 	</ul>
 </div>
-<div class="col-md-3">
+<div class="col-sm-6 col-md-3">
 	<h4 class="text-secondary-green">Get Technical</h4>
 	<ul>
 		<li><a href="#">Developer Documentation</a></li>
@@ -23,7 +23,8 @@
 		<li><a href="#">GitHub</a></li>
 	</ul>
 </div>
-<div class="col-md-3">
+<div class="clearfix visible-sm-block"></div>
+<div class="col-sm-6 col-md-3">
 	<h4 class="text-secondary-yellow">Get Involved</h4>
 	<ul>
 		<li><a href="#">Community Portal</a></li>
@@ -33,7 +34,7 @@
 		<li><a href="#">Volunteer</a></li>
 	</ul>
 </div>
-<div class="col-md-3">
+<div class="col-sm-6 col-md-3">
 	<h4 class="text-additional-secondary-orange">Get Information</h4>
 	<ul>
 		<li><a href="#">About Joomla!</a></li>
