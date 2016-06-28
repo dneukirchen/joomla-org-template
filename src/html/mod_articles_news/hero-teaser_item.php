@@ -8,11 +8,8 @@ $showReadmore = (isset($item->link) && $item->readmore != 0 && $params->get('rea
 	<?php if ($params->get('item_title')) : ?>
 		<header>
 		<?php if (!empty($images->image_intro)) : ?>
-			<img src="<?php echo $images->image_intro; ?>" alt="<?php echo $images->image_intro_alt; ?>"
-			     class="hero-teaser-image"/>
-		<?php elseif (!empty($images->image_intro_alt)) : ?>
 			<span class="icon-circled icon-circled-sm icon-shadowed">
-				<?php echo HtmlHelper::svgIcon($images->image_intro_alt); ?>
+				<?php echo HtmlHelper::svgIcon($images->image_intro); ?>
 			</span>
 		<?php endif; ?>
 		<<?php echo $itemHeading; ?> class="hero-teaser-title">
