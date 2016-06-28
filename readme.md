@@ -1,20 +1,21 @@
 # Joomla 3.x Template for the joomla.org frontpage
 
-## Module positions
-
 ## TODO 
 * ~~mobile/tablet adjustments~~
-* custom icon set
-* chrome overflow/border-radius bug
-* button style adjustments
-* Shrinked transition
-* scroll transitions
-* compare with the features from the old template
-* create the find graphic (magnifying glass) with css
+* ~~custom icon set~~
 * finder functionality
-* event gallery slider
+* add links
+* compare with the features from the old template
+
+## Nice to Have TODO
+* ~~button style adjustments~~
+* ~Shrinked transition~~
+* ~~scroll transitions~~
+* create the finder graphic (magnifying glass) with css
+* chrome overflow/border-radius bug
+
+## Content TODO
+* event gallery slider (& dynamic content)
 
 ## TODO after full relaunch
-* rename module positions 
-	* position-0 => search/navbar-form
-* make all content dynamic
+* remove static content (demo folder)
