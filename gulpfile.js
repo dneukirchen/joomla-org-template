@@ -82,7 +82,7 @@ gulp.task('js', function () {
 });
 
 /**
- * Create the svg sprites
+ * Create the svg icon sprite
  */
 gulp.task('svg', function () {
     gulp.src('./src/source/icons/svg/**/*.svg')

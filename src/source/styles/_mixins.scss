@@ -1,0 +1,30 @@
+// Long shadow
+@mixin long-shadow($color, $length: 15, $type: 'filter') {
+  $shadow: '';
+
+  // Box
+  @if $type == 'box' {
+    @for $i from 0 to $length - 1 {
+      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+    }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+    box-shadow: unquote($shadow);
+  }
+
+  // Text
+  @if $type == 'text' {
+    @for $i from 0 to $length - 1 {
+      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+    }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+    box-shadow: unquote($shadow);
+  }
+
+  // Filter
+  @if $type == 'filter' {
+    @for $i from 0 to $length {
+      $shadow: $shadow + ' drop-shadow(' + $i + 'px ' + $i + 'px ' + $color + ')';
+    }
+    filter: unquote($shadow);
+  }
+}

@@ -14,9 +14,6 @@
   height: $size;
   line-height: $size;
   font-size: ceil(($size / 2));
-  .svg-icon {
-    margin: -4px -2px 0 0;
-  }
 }
 
 // Circle variant
@@ -25,32 +22,12 @@
   color: $color;
 }
 
-// Long shadow
-@mixin long-shadow($color, $length: 15, $type: 'box') {
-  $shadow: '';
-
-  // Box
-  @if $type == 'box' {
-    @for $i from 0 to $length - 1 {
-      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+// Icon shadow
+@mixin icon-shadow($color) {
+  &.icon-shadowed {
+    .svg-icon {
+      @include long-shadow($color);
     }
-  }
-
-  // Text
-  @if $type == 'text'{
-    @for $i from 0 to $length - 1 {
-      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
-    }
-  }
-
-  $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
-  $shadow: unquote($shadow);
-
-  @if $type == 'box' {
-    box-shadow: $shadow;
-  }
-  @if $type == 'text' {
-    text-shadow: $shadow;
   }
 }
 
@@ -63,6 +40,17 @@
   fill: currentColor;
   display: inline-block;
   vertical-align: middle;
+
+  .icon-circled & {
+    width: 50px;
+    height: 50px;
+    margin: -8px 0 0;
+  }
+  .icon-circled-sm & {
+    width: 24px;
+    height: 24px;
+    margin: -4px -2px 0 0;
+  }
 }
 
 //== Icon circled
@@ -94,98 +82,58 @@
 // Primary colors
 .icon-circled-primary {
   @include icon-circled-variant($brand-primary, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#4882b8);
-    }
-  }
+  @include icon-shadow(#4882b8);
 }
 
 // Secondary colors
 .icon-circled-secondary-blue {
   @include icon-circled-variant($secondary-blue, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#69abd1);
-    }
-  }
+  @include icon-shadow(#69abd1);
 }
 
 .icon-circled-secondary-yellow {
   @include icon-circled-variant($secondary-yellow, #fff);
-  &.icon-shadowed {
-    @include long-shadow(#e4af45);
-  }
+  @include icon-shadow(#e4af45);
 }
 
 .icon-circled-secondary-orange {
   @include icon-circled-variant($secondary-orange, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#d9653b);
-    }
-  }
+  @include icon-shadow(#d9653b);
 }
 
 // Additional seconday colors
 .icon-circled-additional-secondary-green {
   @include icon-circled-variant($additional-secondary-green, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#408c70);
-    }
-  }
+  @include icon-shadow(#408c70);
 }
 
 .icon-circled-additional-secondary-olive {
   @include icon-circled-variant($additional-secondary-olive, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#7bb35a);
-    }
-  }
+  @include icon-shadow(#7bb35a);
 }
 
 .icon-circled-additional-secondary-purple {
   @include icon-circled-variant($additional-secondary-purple, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#6a509f);
-    }
-  }
+  @include icon-shadow(#6a509f);
+}
 
-  .icon-circled-additional-secondary-red {
-    @include icon-circled-variant($additional-secondary-red, #fff);
-    &.icon-shadowed {
-      @include long-shadow(#ba5e5e);
-    }
-  }
+.icon-circled-additional-secondary-red {
+  @include icon-circled-variant($additional-secondary-red, #fff);
+  @include icon-shadow(#ba5e5e);
 }
 
 .icon-circled-additional-secondary-scarlet {
   @include icon-circled-variant($additional-secondary-scarlet, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#c73f43);
-    }
-  }
+  @include icon-shadow(#c73f43);
 }
 
 .icon-circled-additional-secondary-orange {
   @include icon-circled-variant($additional-secondary-orange, #fff);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow(#c25a35);
-    }
-  }
+  @include icon-shadow(#c25a35);
 }
 
 // neutral colors
 .icon-circled-white {
   @include icon-circled-variant(#fff, $text-color);
-  &.icon-shadowed {
-    .svg-icon {
-      @include long-shadow($neutral-gray-lighter);
-    }
-  }
+  @include icon-shadow($neutral-gray-lighter);
 }

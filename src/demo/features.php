@@ -4,7 +4,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-olive">
-				<span class="fa fa-cog"></span>
+				<?php echo HtmlHelper::svgIcon('gear'); ?>
 			</span>
 			<p>Search Engine</p>
 		</div>
@@ -12,7 +12,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-secondary-yellow">
-				<span class="fa fa-tablet"></span>
+				<?php echo HtmlHelper::svgIcon('devices'); ?>
 			</span>
 			<p>Mobile Friendly</p>
 		</div>
@@ -20,7 +20,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-green">
-				<span class="fa fa-paint-brush"></span>
+				<?php echo HtmlHelper::svgIcon('tools'); ?>
 			</span>
 			<p>Unlimited Design</p>
 		</div>
@@ -28,7 +28,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-scarlet">
-				<span class="fa fa-globe"></span>
+				<?php echo HtmlHelper::svgIcon('world'); ?>
 			</span>
 			<p>Multilingual</p>
 		</div>
@@ -36,7 +36,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-secondary-blue">
-				<span class="fa fa-tachometer"></span>
+				<?php echo HtmlHelper::svgIcon('gauge'); ?>
 			</span>
 			<p>Lightweight & Fast</p>
 		</div>
@@ -44,7 +44,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-red">
-				<span class="fa fa-users"></span>
+			<?php echo HtmlHelper::svgIcon('users'); ?>
 			</span>
 			<p>Multi-UserPermission Levels</p>
 		</div>
@@ -52,7 +52,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-purple">
-				<span class="fa fa-universal-access"></span>
+			<?php echo HtmlHelper::svgIcon('open-source'); ?>
 			</span>
 			<p>Established Open Source Software (10 Years)</p>
 		</div>
@@ -60,7 +60,7 @@
 	<li class="col-xs-6 col-sm-3">
 		<div class="feature">
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-orange">
-				<span class="fa fa-plug"></span>
+			<?php echo HtmlHelper::svgIcon('flexible'); ?>
 			</span>
 			<p>Flexible & Fully Extensible</p>
 		</div>
