@@ -2,68 +2,11 @@
 // Module styles
 //===============
 
-//== Variables
-//
-//##
-$shadow-color-darken-percent: 16%;
-
 //== Mixins
 //
 //##
 
 // Shadow effect
-@mixin icon-shadowed($color) {
-  text-shadow: $color 1px 1px,
-  $color 2px 2px,
-  $color 3px 3px,
-  $color 4px 4px,
-  $color 5px 5px,
-  $color 6px 6px,
-  $color 7px 7px,
-  $color 8px 8px,
-  $color 9px 9px,
-  $color 10px 10px,
-  $color 11px 11px,
-  $color 12px 12px,
-  $color 13px 13px,
-  $color 14px 14px,
-  $color 15px 15px,
-  $color 16px 16px,
-  $color 17px 17px,
-  $color 18px 18px,
-  $color 19px 19px,
-  $color 20px 20px,
-  $color 21px 21px,
-  $color 22px 22px,
-  $color 23px 23px,
-  $color 24px 24px,
-  $color 25px 25px,
-  $color 26px 26px,
-  $color 27px 27px,
-  $color 28px 28px,
-  $color 29px 29px,
-  $color 30px 30px,
-  $color 31px 31px,
-  $color 32px 32px,
-  $color 33px 33px,
-  $color 34px 34px,
-  $color 35px 35px,
-  $color 36px 36px,
-  $color 37px 37px,
-  $color 38px 38px,
-  $color 39px 39px,
-  $color 40px 40px,
-  $color 41px 41px,
-  $color 42px 42px,
-  $color 43px 43px,
-  $color 44px 44px,
-  $color 45px 45px,
-  $color 46px 46px,
-  $color 47px 47px,
-  $color 48px 48px,
-  $color 49px 49px,
-  $color 50px 50px;
-}
 
 // Circle size
 @mixin icon-circled-size($size) {
@@ -71,12 +14,44 @@ $shadow-color-darken-percent: 16%;
   height: $size;
   line-height: $size;
   font-size: ceil(($size / 2));
+  .svg-icon {
+    margin: -4px -2px 0 0;
+  }
 }
 
 // Circle variant
 @mixin icon-circled-variant($background, $color) {
   background: $background;
   color: $color;
+}
+
+// Long shadow
+@mixin long-shadow($color, $length: 15, $type: 'box') {
+  $shadow: '';
+
+  // Box
+  @if $type == 'box' {
+    @for $i from 0 to $length - 1 {
+      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+    }
+  }
+
+  // Text
+  @if $type == 'text'{
+    @for $i from 0 to $length - 1 {
+      $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+    }
+  }
+
+  $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+  $shadow: unquote($shadow);
+
+  @if $type == 'box' {
+    box-shadow: $shadow;
+  }
+  @if $type == 'text' {
+    text-shadow: $shadow;
+  }
 }
 
 //== Svg icon
@@ -120,7 +95,9 @@ $shadow-color-darken-percent: 16%;
 .icon-circled-primary {
   @include icon-circled-variant($brand-primary, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#4882b8);
+    .svg-icon {
+      @include long-shadow(#4882b8);
+    }
   }
 }
 
@@ -128,21 +105,25 @@ $shadow-color-darken-percent: 16%;
 .icon-circled-secondary-blue {
   @include icon-circled-variant($secondary-blue, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#69abd1);
+    .svg-icon {
+      @include long-shadow(#69abd1);
+    }
   }
 }
 
 .icon-circled-secondary-yellow {
   @include icon-circled-variant($secondary-yellow, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#e4af45);
+    @include long-shadow(#e4af45);
   }
 }
 
 .icon-circled-secondary-orange {
   @include icon-circled-variant($secondary-orange, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#d9653b);
+    .svg-icon {
+      @include long-shadow(#d9653b);
+    }
   }
 }
 
@@ -150,42 +131,52 @@ $shadow-color-darken-percent: 16%;
 .icon-circled-additional-secondary-green {
   @include icon-circled-variant($additional-secondary-green, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#408c70);
+    .svg-icon {
+      @include long-shadow(#408c70);
+    }
   }
 }
 
 .icon-circled-additional-secondary-olive {
   @include icon-circled-variant($additional-secondary-olive, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#7bb35a);
+    .svg-icon {
+      @include long-shadow(#7bb35a);
+    }
   }
 }
 
 .icon-circled-additional-secondary-purple {
   @include icon-circled-variant($additional-secondary-purple, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#6a509f);
+    .svg-icon {
+      @include long-shadow(#6a509f);
+    }
   }
-}
 
-.icon-circled-additional-secondary-red {
-  @include icon-circled-variant($additional-secondary-red, #fff);
-  &.icon-shadowed {
-    @include icon-shadowed(#ba5e5e);
+  .icon-circled-additional-secondary-red {
+    @include icon-circled-variant($additional-secondary-red, #fff);
+    &.icon-shadowed {
+      @include long-shadow(#ba5e5e);
+    }
   }
 }
 
 .icon-circled-additional-secondary-scarlet {
   @include icon-circled-variant($additional-secondary-scarlet, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#c73f43);
+    .svg-icon {
+      @include long-shadow(#c73f43);
+    }
   }
 }
 
 .icon-circled-additional-secondary-orange {
   @include icon-circled-variant($additional-secondary-orange, #fff);
   &.icon-shadowed {
-    @include icon-shadowed(#c25a35);
+    .svg-icon {
+      @include long-shadow(#c25a35);
+    }
   }
 }
 
@@ -193,6 +184,8 @@ $shadow-color-darken-percent: 16%;
 .icon-circled-white {
   @include icon-circled-variant(#fff, $text-color);
   &.icon-shadowed {
-    @include icon-shadowed($neutral-gray-lighter);
+    .svg-icon {
+      @include long-shadow($neutral-gray-lighter);
+    }
   }
 }
