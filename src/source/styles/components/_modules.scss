@@ -39,8 +39,16 @@
 //
 //##
 .finder {
-  background: #fff url('../demo/img/finder-bg.jpg') center bottom no-repeat;
+  @media (min-width: 630px) {
+    background: #fff url('../demo/img/finder-bg.jpg') 90% bottom no-repeat;
+  }
+  @media (min-width: $screen-md) {
+    background: #fff url('../demo/img/finder-bg.jpg') center bottom no-repeat;
+  }
   margin-bottom: 1px;
+  .form-group {
+    display: inline-block !important;
+  }
   .pretty-select {
     width: 270px;
     margin-right: 10px;
