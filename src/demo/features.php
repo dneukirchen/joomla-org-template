@@ -6,7 +6,7 @@
 			<span class="icon-circled icon-circled-lg icon-shadowed icon-circled-additional-secondary-olive">
 				<?php echo HtmlHelper::svgIcon('gear'); ?>
 			</span>
-			<p>Search Engine</p>
+			<p>Search Engine Friendly</p>
 		</div>
 	</li>
 	<li class="col-xs-6 col-sm-3">
