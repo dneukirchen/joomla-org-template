@@ -25,6 +25,6 @@
     @for $i from 0 to $length {
       $shadow: $shadow + ' drop-shadow(' + $i + 'px ' + $i + 'px ' + $color + ')';
     }
-    filter: unquote($shadow);
+    //filter: unquote($shadow);
   }
 }
