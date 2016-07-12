@@ -12,6 +12,6 @@
 	<p>Joomla has thousands of free extensions and templates allowing you to customize your site to fit
 		your specific needs.</p>
 	<p>
-		<a href="#" class="btn btn-danger">Read more about Joomla!</a>
+		<a href="https://www.joomla.org/about-joomla.html" class="btn btn-danger">Read more about Joomla!</a>
 	</p>
 </div>
