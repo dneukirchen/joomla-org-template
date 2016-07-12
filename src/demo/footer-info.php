@@ -4,7 +4,7 @@
 		<a href="<?php echo $this->baseurl; ?>" title="Joomla Frontpage">
 			<img class="joomla-logo" src="<?php echo $templatePath . '/img/joomla-logo.png'; ?>" alt="Joomla Logo"/>
 		</a>
-		<span>2005-<?php date('Y'); ?> Open Source Matters, Inc. All Rights Reserved</span></p>
+		<span>2005 - <?php echo date('Y'); ?> Open Source Matters, Inc. All Rights Reserved</span></p>
 </div>
 <div class="col-sm-6">
 	<ul>
