@@ -74,6 +74,7 @@ gulp.task('js', function () {
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
             config.bowerDir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
             config.bowerDir + '/jquery-countTo/jquery.countTo.js',
+            config.bowerDir + '/blockadblock/blockadblock.js',
             './src/source/scripts/template.js'
         ])
         .pipe(uglify())

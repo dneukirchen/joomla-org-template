@@ -19,6 +19,8 @@
     "font-awesome": "fontawesome#^4.6.1",
     "jquery-countTo": "^1.2.0",
     "animate.css": "^3.5.1",
-    "animate-sass": "^0.6.6"
+    "animate-sass": "^0.6.6",
+    "blockadblock": "^3.2.0",
+    "scrollmagic": "^2.0.5"
   }
 }

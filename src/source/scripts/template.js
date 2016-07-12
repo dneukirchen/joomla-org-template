@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
 
     // Init SVG Holder
     var templateName = 'rheinsurfen';
-    $.get("/redes/templates/"+templateName+"/img/icons.svg", function(data) {
+    $.get("/redes/templates/" + templateName + "/img/icons.svg", function (data) {
         $('<div class="svg-holder"></div>')
             .hide()
             .append(new XMLSerializer().serializeToString(data.documentElement))
@@ -26,19 +26,19 @@ jQuery(document).ready(function ($) {
     new ScrollMagic.Scene({
         triggerElement: ".why-joomla"
     })
-        //.addIndicators()
+    //.addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: ".features"
     })
-        //.addIndicators()
+    //.addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: ".finder"
     })
-        //.addIndicators()
+    //.addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -46,9 +46,9 @@ jQuery(document).ready(function ($) {
         offset: -150,
         reverse: true,
     })
-        //.addIndicators()
+    //.addIndicators()
         .on("start", function (e) {
-            if(e.scrollDirection === "FORWARD") {
+            if (e.scrollDirection === "FORWARD") {
                 $('.count-up').countTo({
                     speed: 1500,
                     refreshInterval: 40
@@ -56,4 +56,15 @@ jQuery(document).ready(function ($) {
             }
         })
         .addTo(controller);
+
+    // Addblocker
+    if (typeof blockAdBlock === 'undefined') {
+        adBlockDetected();
+    } else {
+        blockAdBlock.onDetected(adBlockDetected);
+        blockAdBlock.on(true, adBlockDetected);
+    }
+    function adBlockDetected() {
+        $('#adblock-msg').removeClass('hide');
+    }
 });

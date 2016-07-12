@@ -4,5 +4,21 @@
 
 // Scroll to top plugin
 #scrollToTop {
-  background: $brand-danger !important;
+  background: $brand-primary !important;
+}
+
+// Adblocker
+#adblock-msg {
+  background: $brand-danger;
+  min-height: 20px;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
 }

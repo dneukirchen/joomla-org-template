@@ -75,7 +75,7 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 			<div class="hero-overlay">
 				<div class="container">
 					<div class="row">
-						<jdoc:include type="modules" name="hero" />
+						<jdoc:include type="modules" name="hero"/>
 					</div>
 				</div>
 			</div>
@@ -144,6 +144,7 @@ $doc->addStyleSheet($templatePath . '/css/template.min.css');
 			<div class="row"><?php include __DIR__ . '/demo/footer-info.php'; ?></div>
 		</div>
 	</section>
+	<div id="adblock-msg" class="hide">We have detected that you are using an ad blocker. The Joomla Project relies on revenue from these advertisements so please consider disabling the ad blocker for this domain.</div>
 </footer>
 <jdoc:include type="modules" name="debug"/>
 <script src="<?php echo $templatePath; ?>/js/template.min.js"></script>
