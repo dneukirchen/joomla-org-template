@@ -7,9 +7,9 @@
 </div>
 <div class="col-md-6 col-md-pull-6">
 	<h2 class="text-default">Why Joomla?</h2>
-	<p>Hundreds of developers have been improving Joomla since the first version was released in 2005.
-		This immense effort has made Joomla very popular, easy to use, stable and secure.</p>
-	<p>Joomla has thousands of free extensions and templates allowing you to customize your site to fit
+	<p>Hundreds of developers have been improving Joomla! since the first version was released in 2005.
+		This immense effort has made Joomla! very popular, easy to use, stable and secure.</p>
+	<p>Joomla! has thousands of free extensions and templates allowing you to customize your site to fit
 		your specific needs.</p>
 	<p>
 		<a href="https://www.joomla.org/about-joomla.html" class="btn btn-danger">Read more about Joomla!</a>

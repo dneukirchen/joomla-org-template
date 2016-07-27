@@ -206,7 +206,7 @@
 					<option value="37" data-level="1">- Migration &amp; Conversion</option>
 					<option value="48" data-level="2">- - Data Import &amp; Export</option>
 					<option value="201" data-level="2">- - Extensions Migration</option>
-					<option value="202" data-level="2">- - Joomla Migration</option>
+					<option value="202" data-level="2">- - Joomla! Migration</option>
 					<option value="203" data-level="2">- - Users Import &amp; Export</option>
 					<option value="9" data-level="1">- Miscellaneous</option>
 					<option value="93" data-level="2">- - Development</option>
@@ -345,7 +345,7 @@
 					<option value="design-development">Design &amp; Development</option>
 					<option value="custom-extensions">Extension Development</option>
 					<option value="hosting-providers">Hosting Providers</option>
-					<option value="joomla-security">Joomla Security</option>
+					<option value="joomla-security">Joomla! Security</option>
 					<option value="marketing-support">Marketing Support</option>
 					<option value="migration-and-upgrade-services">Migrations &amp; Upgrades</option>
 					<option value="programming">Programming</option>

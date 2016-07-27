@@ -39,7 +39,7 @@
 	<ul>
 		<li><a href="#">About Joomla!</a></li>
 		<li><a href="#">Features</a></li>
-		<li><a href="#">Joomla Magazine</a></li>
+		<li><a href="#">Joomla! Magazine</a></li>
 		<li><a href="#">Announcements</a></li>
 		<li><a href="#">Shop</a></li>
 		<li><a href="#">Contact</a></li>
