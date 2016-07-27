@@ -321,6 +321,14 @@
   .social-media-title {
     line-height: 45px;
     vertical-align: top;
+    color: $tertiary-blue-dark;
+    transition: color .2s ease-in;
+  }
+
+  a:hover {
+    .social-media-title {
+      color: #fff;
+    }
   }
 }
 
