@@ -333,10 +333,11 @@
 <div class="col-md-4 col-md-offset-4">
 	<h3>Find a Joomla! Professional</h3>
 	<p>I am looking for someone to help me with:</p>
-	<form action="" class="form-inline" method="get">
+	<form action="http://resources.joomla.org/en/component/zoo/category/" class="form-inline" method="get">
 		<div class="form-group">
 			<div class="pretty-select">
-				<select class="form-control">
+				<select class="form-control" id="fjp-category"
+				        onchange="window.location.href = this.form.action + this.value;">
 					<option value="creative-strategy">Creative Strategy</option>
 					<option value="configuration-support">Configuration Support</option>
 					<option value="consulting">Consulting</option>
@@ -355,6 +356,7 @@
 				</select>
 			</div>
 		</div>
-		<button type="submit" class="btn btn-primary">Go</button>
+		<button type="submit" class="btn btn-primary"
+		        onclick="var e = document.getElementById('fjp-category');window.location.href = this.form.action + e.options[e.selectedIndex].value;return false;">Go</button>
 	</form>
 </div>
