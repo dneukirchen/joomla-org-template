@@ -50,7 +50,7 @@
 </div>
 <div class="col-xs-6 col-sm-4 col-md-2 numbers-box development">
 	<div class="numbers-text">
-		<span class="number"><span class="count-up" data-from="0" data-to="550">0</span> <sup>+</sup></span><br/>Thousands<br/>Lines of Code
+		<span class="number"><span class="count-up" data-from="0" data-to="550">0</span> <sup>+</sup></span><br/>Thousand<br/>Lines of Code
 	</div>
 </div>
 
