@@ -22,7 +22,7 @@ $navbar-form-collapse-breakpoint-max: $screen-sm-max;
     margin: 15px 0 0;
   }
   a {
-    &:hover {
+    &:hover, &:focus, &:active {
       text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 1px;
       text-decoration: none;
     }
