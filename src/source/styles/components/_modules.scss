@@ -245,8 +245,12 @@
     }
     .read-all {
       position: absolute;
-      top: 64px;
+      bottom: 20px;
       right: ceil(($grid-gutter-width / 2));
+      @media (min-width: $screen-sm-min) {
+        bottom: auto;
+        top: 64px;
+      }
       span {
         margin-left: 5px;
       }
