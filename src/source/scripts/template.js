@@ -10,7 +10,16 @@ jQuery(document).ready(function ($) {
 
     // Init SVG Holder
     var templateName = 'rheinsurfen';
-    $.get("/redes/templates/" + templateName + "/img/icons.svg", function (data) {
+    if (!location.origin) {
+        var baseUrl = location.protocol + "//" + location.host;
+    } else {
+        var baseUrl = location.origin;
+    }
+    // Dev code
+    if(baseUrl.indexOf('repository') > -1) {
+        baseUrl = baseUrl + '/redes';
+    }
+    $.get(baseUrl + '/templates/' + templateName + "/img/icons.svg", function (data) {
         $('<div class="svg-holder"></div>')
             .hide()
             .append(new XMLSerializer().serializeToString(data.documentElement))
