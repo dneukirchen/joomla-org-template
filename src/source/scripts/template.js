@@ -24,24 +24,6 @@ jQuery(document).ready(function ($) {
     var controller = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({
-        triggerElement: ".why-joomla"
-    })
-    //.addIndicators()
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-        triggerElement: ".features"
-    })
-    //.addIndicators()
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-        triggerElement: ".finder"
-    })
-    //.addIndicators()
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
         triggerElement: ".numbers",
         offset: -150,
         reverse: true,
