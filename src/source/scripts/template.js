@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
+    //===============
     // Navbar shrink effect
+    //===============
     $(window).scroll(function () {
         if ($(document).scrollTop() > 150) {
             $('body').addClass('nav-shrinked');
@@ -8,17 +10,22 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    // Init SVG Holder
+    //===============
+    // SVG Icon holder
+    //===============
     var templateName = 'rheinsurfen';
     if (!location.origin) {
         var baseUrl = location.protocol + "//" + location.host;
     } else {
         var baseUrl = location.origin;
     }
-    // Dev code
+
+    // Dev subfolder
     if(baseUrl.indexOf('repository') > -1) {
         baseUrl = baseUrl + '/redes';
     }
+
+    // Ajax request
     $.get(baseUrl + '/templates/' + templateName + "/img/icons.svg", function (data) {
         $('<div class="svg-holder"></div>')
             .hide()
@@ -29,7 +36,6 @@ jQuery(document).ready(function ($) {
     //===============
     // Scrollmagic
     //===============
-
     var controller = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({
@@ -37,7 +43,6 @@ jQuery(document).ready(function ($) {
         offset: -150,
         reverse: true,
     })
-    //.addIndicators()
         .on("start", function (e) {
             if (e.scrollDirection === "FORWARD") {
                 $('.count-up').countTo({
@@ -48,7 +53,9 @@ jQuery(document).ready(function ($) {
         })
         .addTo(controller);
 
-    // Addblocker
+    //===============
+    // Adblocker
+    //===============
     if (typeof blockAdBlock === 'undefined') {
         adBlockDetected();
     } else {
