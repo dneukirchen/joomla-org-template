@@ -2,10 +2,10 @@
 <div class="col-md-4">
 	<h3>Find a Joomla! Extension</h3>
 	<p>I am looking for an addon in the category:</p>
-	<form action="" class="form-inline" method="get">
+	<form action="http://extensions.joomla.org/extensions/extension" class="form-inline" method="get">
 		<div class="form-group">
 			<div class="pretty-select">
-				<select name="filter[core_catid]" class="form-control">
+				<select name="filter[core_catid]" class="form-control" onchange="this.form.submit()">
 					<option value="23" data-level="1">- Access &amp; Security</option>
 					<option value="129" data-level="2">- - Development Tools</option>
 					<option value="233" data-level="2">- - Extensions Tools</option>
@@ -324,6 +324,7 @@
 					<option value="214" data-level="2">- - e-Commerce Integrations</option>
 					<option value="296" data-level="2">- - webERP</option>
 				</select>
+				<input type="hidden" name="controller" value="filter">
 			</div>
 		</div>
 		<button type="submit" class="btn btn-danger">Go</button>
