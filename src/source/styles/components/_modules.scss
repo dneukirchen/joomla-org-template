@@ -75,6 +75,7 @@
   .numbers-text {
     position: absolute;
     bottom: 20px;
+    left: 20px;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
@@ -101,8 +102,10 @@
   // Color & Background variations
   .installations, .extensions, .support {
     .numbers-text {
-      right: 20px;
-      text-align: right;
+      @media (min-width: $screen-md-min) {
+        right: 20px;
+        text-align: right;
+      }
     }
     @media (min-width: $screen-md) {
       .numbers-text {
@@ -111,11 +114,6 @@
       .number {
         margin-right: -25px;
       }
-    }
-  }
-  .volunteers, .development, .languages {
-    .numbers-text {
-      left: 20px;
     }
   }
   .installations {
