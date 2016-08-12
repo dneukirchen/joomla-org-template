@@ -55,4 +55,8 @@
 .footer-3 {
   background: #1f2942;
   padding: 15px 0 10px;
+  @media (min-width: $screen-md-min) {
+    padding-bottom: 50px;
+  }
 }
+
